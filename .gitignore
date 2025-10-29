@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+*.log
+
+
+# Сторонние проекты/пакеты
+PaddleOCR/
+paddle/
+Russian cars.v10i.yolov11/
+Russian License Plates Detector.v1i.yolov8/
+
+# IDE и ОС
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
