@@ -5,6 +5,7 @@ numpy>=1.23
 opencv-python>=4.8
 ultralytics>=8.2.112
 easyocr>=1.7.1
+paddleocr>=3.3
 pandas>=2.0
 PyYAML>=6.0
 
