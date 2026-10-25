@@ -1,0 +1,59 @@
+validate_dataset.py v1.0 — Волга-IT 2026, полуфинал, номинация «ИИ и анализ данных»
+Датасет: D:\volga\submission\volga-anpr_20261025\dataset
+
+== Статистика ==
+Изображений: 5109 (реальных 109, синтетических 5000, без разметки в meta 0)
+Строк в meta.csv: 5815
+Знаков по типам: {'type1b': 2340, 'type1a': 2329, 'type1': 1146}
+Реальных изображений по типам: {'type1b': 59, 'type1a': 50, 'other': 0}  (рекомендуется {'type1a': 150, 'type1b': 300, 'other': 50})
+Уникальных читаемых ГРЗ (реальные): {'type1b': 54, 'type1a': 50}  (рекомендуется {'type1a': 50, 'type1b': 100})
+Условия съёмки: {'angle': 5343}
+Лицензии: {'CC-BY-4.0': 5762, 'Public Domain': 38, 'UNVERIFIED: Kaggle image license unknown': 14, 'CC0-1.0': 1}
+Источники (топ): {'own_generator:scene_current_v1': 5706, 'https://universe.roboflow.com/artems-workspace-qhtuc/russ...': 38, 'https://universe.roboflow.com/sergai/1-djo2q/dataset/1': 22, 'https://www.kaggle.com/datasets/dimahkiin/russian-license...': 14, 'https://universe.roboflow.com/fverwfgerwf/two-line-russia...': 3, 'https://commons.wikimedia.org/wiki/File:Moscow_bus_10247_...': 2, 'https://commons.wikimedia.org/wiki/File:Moscow_bus_16377_...': 2, 'https://commons.wikimedia.org/wiki/File:Moscow_bus_10263_...': 2, 'https://commons.wikimedia.org/wiki/File:Moscow_bus_06543_...': 2, 'https://commons.wikimedia.org/wiki/File:Moscow_bus_17463_...': 2, 'https://commons.wikimedia.org/wiki/File:Moscow_bus_11382_...': 1, 'https://commons.wikimedia.org/wiki/File:Moscow_bus_13111_...': 1, 'https://commons.wikimedia.org/wiki/File:Moscow_bus_09215_...': 1, 'https://commons.wikimedia.org/wiki/File:Moscow_bus_09479_...': 1, 'https://commons.wikimedia.org/wiki/File:Moscow_bus_09318_...': 1}
+Побайтовых дубликатов: 0; совпадений с отладочным набором: 0
+
+== ERROR: 0 ==
+
+== WARNING: 113 ==
+-- meta-conditions (109)
+   [WARNING] meta-conditions        meta.csv:5708: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5709: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5710: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5711: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5712: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5713: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5714: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5715: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5716: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5717: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5718: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5719: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5720: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5721: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5722: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5723: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5724: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5725: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5726: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5727: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5728: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5729: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5730: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5731: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5732: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5733: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5734: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5735: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5736: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:5737: conditions пусто для реального изображения
+   ... ещё 79 (см. JSON-отчёт)
+-- volume (4)
+   [WARNING] volume                 <root>: реальных изображений type1a: 50, рекомендуется не менее 150
+   [WARNING] volume                 <root>: реальных изображений type1b: 59, рекомендуется не менее 300
+   [WARNING] volume                 <root>: реальных изображений other: 0, рекомендуется не менее 50
+   [WARNING] volume                 <root>: уникальных полностью читаемых ГРЗ type1b на реальных фото: 54, рекомендуется не менее 100
+
+Напоминание (проверяется жюри вручную): лица людей размыты; нет кадров, где человек — смысловой центр;
+материалы получены легально (п. 6.3); разметка не сфальсифицирована (п. 8).
+
+ИТОГ: валидация ПРОЙДЕНА с предупреждениями. Ошибок: 0, предупреждений: 113.

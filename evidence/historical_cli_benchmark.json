@@ -1,0 +1,44 @@
+{
+  "device": "cuda",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "input": "D:\\volga\\volga-anpr\\reports\\final_completion_20261020\\benchmark_owned_200",
+  "rounds": [
+    {
+      "round": 0,
+      "images": 200,
+      "entire_CLI_wall_ms": 22322.501099988585,
+      "entire_CLI_ms_per_image": 111.61250549994293,
+      "model_initialization_ms": 598.291700007394,
+      "performance": {
+        "model_initialization_ms": 598.291700007394,
+        "gpu_name": "NVIDIA GeForce GTX 1060 6GB",
+        "peak_allocated_mib": 128.892578125,
+        "peak_reserved_mib": 242.0
+      },
+      "prediction_rows": 194
+    }
+  ],
+  "entire_CLI_amortized_ms_per_image": {
+    "count": 1,
+    "mean": 111.61250549994293,
+    "median": 111.61250549994293,
+    "p90": 111.61250549994293,
+    "p95": 111.61250549994293,
+    "min": 111.61250549994293,
+    "max": 111.61250549994293
+  },
+  "individual_read_decode_pipeline_ms": {
+    "count": 200,
+    "mean": 78.48584299863433,
+    "median": 61.020599998300895,
+    "p90": 84.88258003199007,
+    "p95": 91.2161450018175,
+    "min": 33.80900001502596,
+    "max": 2958.548399998108
+  },
+  "scope": "Entire subprocess: interpreter, imports, integrity checks, model load, image I/O, inference, output validation and CSV/JSON writes. Per-image distribution excludes shared startup/output writes.",
+  "reference_i5_7600_GTX1050Ti_verified": false,
+  "no_GT_input": true,
+  "detector_cache_used": false,
+  "performance_only_no_accuracy_claim": true
+}

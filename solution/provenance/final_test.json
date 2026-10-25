@@ -1,0 +1,300 @@
+{
+  "status": "COMPLETE",
+  "created_at": "2026-10-19T11:50:20.576270+00:00",
+  "scope": "PARTIAL-GT selected objects; previously used in H; not a fresh untouched test",
+  "freeze_sha256": "2bc6396fd049328129720b45a97a5296a353491064e544612c0781340d62dec2",
+  "FINAL_I_TEST": {
+    "created_at": "2026-10-19T11:50:20.500781+00:00",
+    "model": "FINAL-I",
+    "overall": {
+      "objects": 40,
+      "detected": 17,
+      "recall": 0.425,
+      "correct": 11,
+      "FPA": 0.275,
+      "type_correct_given_detection": 1.0,
+      "OCR_text_given_detection": 0.6470588235294118,
+      "geometry_GT_objects": 0,
+      "geometry_matched_objects": 0,
+      "OBB_IoU_mean_given_match": null,
+      "angle_error_mean_deg_given_match": null,
+      "oriented_recall_at_0_5": null
+    },
+    "per_type": {
+      "type1": {
+        "objects": 0,
+        "detected": 0,
+        "recall": null,
+        "correct": 0,
+        "FPA": null,
+        "type_correct_given_detection": null,
+        "OCR_text_given_detection": null,
+        "geometry_GT_objects": 0,
+        "geometry_matched_objects": 0,
+        "OBB_IoU_mean_given_match": null,
+        "angle_error_mean_deg_given_match": null,
+        "oriented_recall_at_0_5": null
+      },
+      "type1a": {
+        "objects": 20,
+        "detected": 16,
+        "recall": 0.8,
+        "correct": 10,
+        "FPA": 0.5,
+        "type_correct_given_detection": 1.0,
+        "OCR_text_given_detection": 0.625,
+        "geometry_GT_objects": 0,
+        "geometry_matched_objects": 0,
+        "OBB_IoU_mean_given_match": null,
+        "angle_error_mean_deg_given_match": null,
+        "oriented_recall_at_0_5": null
+      },
+      "type1b": {
+        "objects": 20,
+        "detected": 1,
+        "recall": 0.05,
+        "correct": 1,
+        "FPA": 0.05,
+        "type_correct_given_detection": 1.0,
+        "OCR_text_given_detection": 1.0,
+        "geometry_GT_objects": 0,
+        "geometry_matched_objects": 0,
+        "OBB_IoU_mean_given_match": null,
+        "angle_error_mean_deg_given_match": null,
+        "oriented_recall_at_0_5": null
+      }
+    },
+    "by_size": {
+      "tiny": {
+        "objects": 7,
+        "detected": 0,
+        "recall": 0.0,
+        "correct": 0,
+        "FPA": 0.0,
+        "type_correct_given_detection": null,
+        "OCR_text_given_detection": null,
+        "geometry_GT_objects": 0,
+        "geometry_matched_objects": 0,
+        "OBB_IoU_mean_given_match": null,
+        "angle_error_mean_deg_given_match": null,
+        "oriented_recall_at_0_5": null
+      },
+      "small": {
+        "objects": 13,
+        "detected": 1,
+        "recall": 0.07692307692307693,
+        "correct": 1,
+        "FPA": 0.07692307692307693,
+        "type_correct_given_detection": 1.0,
+        "OCR_text_given_detection": 1.0,
+        "geometry_GT_objects": 0,
+        "geometry_matched_objects": 0,
+        "OBB_IoU_mean_given_match": null,
+        "angle_error_mean_deg_given_match": null,
+        "oriented_recall_at_0_5": null
+      },
+      "medium": {
+        "objects": 0,
+        "detected": 0,
+        "recall": null,
+        "correct": 0,
+        "FPA": null,
+        "type_correct_given_detection": null,
+        "OCR_text_given_detection": null,
+        "geometry_GT_objects": 0,
+        "geometry_matched_objects": 0,
+        "OBB_IoU_mean_given_match": null,
+        "angle_error_mean_deg_given_match": null,
+        "oriented_recall_at_0_5": null
+      },
+      "large": {
+        "objects": 20,
+        "detected": 16,
+        "recall": 0.8,
+        "correct": 10,
+        "FPA": 0.5,
+        "type_correct_given_detection": 1.0,
+        "OCR_text_given_detection": 0.625,
+        "geometry_GT_objects": 0,
+        "geometry_matched_objects": 0,
+        "OBB_IoU_mean_given_match": null,
+        "angle_error_mean_deg_given_match": null,
+        "oriented_recall_at_0_5": null
+      }
+    },
+    "failures": {
+      "DETECTOR_MISS": 23,
+      "CORRECT": 11,
+      "OCR_OR_RECTIFICATION": 6
+    },
+    "performance_diagnostic": {
+      "GPU_mean_ms": 105.20167500108073,
+      "GPU_p95_ms": 90.79142500268034,
+      "peak_reserved_MiB": 242.0,
+      "GPU": "NVIDIA GeForce GTX 1060 6GB",
+      "scope": "One pass, no test-image warmup; includes first-image costs; not the VAL benchmark"
+    },
+    "scope": "PARTIAL-GT selected objects; previously used in H; not a fresh untouched test",
+    "precision": null,
+    "FPR": null,
+    "complete_scene_recall": null
+  },
+  "historical_baselines": {
+    "BEST_G_TEST": {
+      "overall": {
+        "objects": 40,
+        "correct": 6,
+        "FPA": 0.15,
+        "OCR_good_bbox_raw_FPA": 0.225,
+        "OCR_good_bbox_post_FPA": 0.175,
+        "selected_object_detector_recall": 0.25,
+        "type_accuracy_all_targets": 0.25,
+        "type_accuracy_given_detection": 1.0,
+        "type1a_structural_split_success": 1.0,
+        "split_success_denominator": 8,
+        "split_metric_is_proxy_without_row_GT": true
+      },
+      "per_type": {
+        "type1": {
+          "objects": 0,
+          "correct": 0,
+          "FPA": null,
+          "OCR_good_bbox_raw_FPA": null,
+          "OCR_good_bbox_post_FPA": null,
+          "selected_object_detector_recall": null,
+          "type_accuracy_all_targets": null,
+          "type_accuracy_given_detection": null,
+          "type1a_structural_split_success": null,
+          "split_success_denominator": 0,
+          "split_metric_is_proxy_without_row_GT": true
+        },
+        "type1a": {
+          "objects": 20,
+          "correct": 6,
+          "FPA": 0.3,
+          "OCR_good_bbox_raw_FPA": 0.35,
+          "OCR_good_bbox_post_FPA": 0.35,
+          "selected_object_detector_recall": 0.4,
+          "type_accuracy_all_targets": 0.4,
+          "type_accuracy_given_detection": 1.0,
+          "type1a_structural_split_success": 1.0,
+          "split_success_denominator": 8,
+          "split_metric_is_proxy_without_row_GT": true
+        },
+        "type1b": {
+          "objects": 20,
+          "correct": 0,
+          "FPA": 0.0,
+          "OCR_good_bbox_raw_FPA": 0.1,
+          "OCR_good_bbox_post_FPA": 0.0,
+          "selected_object_detector_recall": 0.1,
+          "type_accuracy_all_targets": 0.1,
+          "type_accuracy_given_detection": 1.0,
+          "type1a_structural_split_success": null,
+          "split_success_denominator": 0,
+          "split_metric_is_proxy_without_row_GT": true
+        }
+      },
+      "waterfall": {
+        "DETECTOR_MISS": 30,
+        "OCR_GOOD_INPUT": 3,
+        "POSTPROCESS": 1,
+        "CORRECT": 6
+      },
+      "model": "BEST_G_TEST",
+      "profile": "frozen_g",
+      "split": "untouched_test",
+      "created_at": "2026-10-18T15:11:17.353463+00:00",
+      "source_checkpoint": "D:\\volga\\volga-anpr\\models\\phase_g\\G06_balanced\\best.pt",
+      "image_count": 40,
+      "cached_pipeline_timing_ms": {
+        "mean": 10.71327499976178,
+        "p95": 46.27119999786371,
+        "scope": "Diagnostic; excludes detector and good-crop OCR"
+      },
+      "scope": "PARTIAL-GT selected objects; precision/FP per image/complete-scene recall not computed"
+    },
+    "FINAL_H_TEST": {
+      "overall": {
+        "objects": 40,
+        "correct": 9,
+        "FPA": 0.225,
+        "OCR_good_bbox_raw_FPA": 0.625,
+        "OCR_good_bbox_post_FPA": 0.625,
+        "selected_object_detector_recall": 0.25,
+        "type_accuracy_all_targets": 0.25,
+        "type_accuracy_given_detection": 1.0,
+        "type1a_structural_split_success": 1.0,
+        "split_success_denominator": 8,
+        "split_metric_is_proxy_without_row_GT": true
+      },
+      "per_type": {
+        "type1": {
+          "objects": 0,
+          "correct": 0,
+          "FPA": null,
+          "OCR_good_bbox_raw_FPA": null,
+          "OCR_good_bbox_post_FPA": null,
+          "selected_object_detector_recall": null,
+          "type_accuracy_all_targets": null,
+          "type_accuracy_given_detection": null,
+          "type1a_structural_split_success": null,
+          "split_success_denominator": 0,
+          "split_metric_is_proxy_without_row_GT": true
+        },
+        "type1a": {
+          "objects": 20,
+          "correct": 7,
+          "FPA": 0.35,
+          "OCR_good_bbox_raw_FPA": 0.45,
+          "OCR_good_bbox_post_FPA": 0.45,
+          "selected_object_detector_recall": 0.4,
+          "type_accuracy_all_targets": 0.4,
+          "type_accuracy_given_detection": 1.0,
+          "type1a_structural_split_success": 1.0,
+          "split_success_denominator": 8,
+          "split_metric_is_proxy_without_row_GT": true
+        },
+        "type1b": {
+          "objects": 20,
+          "correct": 2,
+          "FPA": 0.1,
+          "OCR_good_bbox_raw_FPA": 0.8,
+          "OCR_good_bbox_post_FPA": 0.8,
+          "selected_object_detector_recall": 0.1,
+          "type_accuracy_all_targets": 0.1,
+          "type_accuracy_given_detection": 1.0,
+          "type1a_structural_split_success": null,
+          "split_success_denominator": 0,
+          "split_metric_is_proxy_without_row_GT": true
+        }
+      },
+      "waterfall": {
+        "DETECTOR_MISS": 30,
+        "CORRECT": 9,
+        "OCR_GOOD_INPUT": 1
+      },
+      "model": "FINAL_H_TEST",
+      "profile": "russian_v1",
+      "split": "untouched_test",
+      "created_at": "2026-10-18T15:11:23.679785+00:00",
+      "source_checkpoint": "D:\\volga\\volga-anpr\\models\\phase_h\\FINAL_H.pt",
+      "image_count": 40,
+      "cached_pipeline_timing_ms": {
+        "mean": 9.909617499670276,
+        "p95": 42.264099997919395,
+        "scope": "Diagnostic; excludes detector and good-crop OCR"
+      },
+      "scope": "PARTIAL-GT selected objects; precision/FP per image/complete-scene recall not computed"
+    }
+  },
+  "historical_baseline_sha256": "f4a01de143bdc4aa01ea5115cd7c09cbe09685c4f8678d338b97057b22bd3eb9",
+  "previous_H_evaluation_exists": true,
+  "fresh_untouched_independent_claim_allowed": false,
+  "test_prediction_runs_in_phase_i": 1,
+  "new_model_images_inferred": 40,
+  "baseline_models_rerun": false,
+  "changes_after_test": false,
+  "image_level_precision_computed": false,
+  "false_positives_per_image_computed": false
+}

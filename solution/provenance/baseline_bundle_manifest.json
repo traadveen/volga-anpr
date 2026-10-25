@@ -1,0 +1,188 @@
+{
+  "scope": "FINAL-I submission adapter with per-file input errors; frozen recognition unchanged",
+  "source_config_sha256": "8225bc8b6281c291b788ba6ce5d854ec69d14aebcb164c3f854c9abe27bee6fc",
+  "source_hashes": {
+    "src/__init__.py": "8b455915dd336c6eae0bfea999b9bafb018fbfacc9289e260ec7dfb7429f490f",
+    "src/inference_io.py": "e65893edb6f5f6c91564785768acccfc59ebecc5cb21f119719e5a2bbfc5290a",
+    "src/image_anpr.py": "7f39462a5e250e03b7630b603f631b2249004ad75e60823d694a1e5e4c765265",
+    "src/image_anpr_f.py": "0b78cf4a6d0e7bd66fbd2d23ceb7dee3113cd41ed89911bfdfa0f1d089042396",
+    "src/image_anpr_g.py": "79da5e408cb45aeba53d82093fc57827907e0ca7b062b2b3f16e25818c5d26a4",
+    "src/geometry_f.py": "95d2e7b8bdebafadbb455aed3d213794acc7643ff0a21f734b6b60476e8895f5",
+    "src/multiline.py": "c488c7d04343071f6b9aaad6fb67352c916d023e7db53f49b34e7c4ae0d822ef",
+    "src/multiline_g.py": "409a61b2ad70cefca34a2912890f755eaefaf51ce705e22a82951a24572d9946",
+    "src/ocr_preprocess.py": "70c7a99866c19a0016eb86ba9dd1b1364a566f2f71a5cf42bcd81746df4425fb",
+    "src/real_data_g.py": "9f619f189072828fcd521e2372df1cf1f4cf47afb91964b1aad4d159ed9c2c5d",
+    "src/plate_formats.py": "a647c4c9b97ba91b1e9718a82c815ea962be0d147b34e774ccb5a89d61ccff41",
+    "ocr/__init__.py": "5f41242809c175761ef02a30a20b7fadb7cb873fd9a79ef874973c0445723865",
+    "ocr/crnn.py": "256e6324bf3cfa389bf4cbedee3e3e44449150503c9591e42be84276fae5bdb5",
+    "ocr/utils.py": "4d0f2c83e34bebf134940688a00f9d9ae8448bf4cc33e6618bffbf17b8c491c8",
+    "tools/predict_images_g.py": "ff2d0db24681108149db1e613613f13c452b02f6c14cefef0961581a55c5458b",
+    "tools/benchmark_inference_g.py": "262018d2b2494313951a04b81ca3c39c484b520c98695f11b5f82b92c10d73ed",
+    "tools/baseline_predict.py": "b913103e9a17ef8d7ce84dfb585b8a84365279b150d1f0d16991a2406ffe2b51",
+    "requirements-inference.txt": "ba8855fff727ea28d3735b567ba54a0f04245e99b603b652a5b488cc36664504",
+    "dataset/ATTRIBUTION.md": "69bc18068bfac404bdca1ce8536fc388e31ee5a13d574a3a456023c6aa0fa290",
+    "docs/type1b_format_review.md": "e789a8633a2b5e88652dc3be4b10973f1449235136fc1ad0e9bfe2e9ffba822d",
+    "models/detector/best.pt": "e5583b60e254a47191a65a5e3e78492f99067a4e06b0578549b33d06396776ff",
+    "models/ocr/best.pt": "0f63155156ad8bac62dec469d872fd7da701ce879b5ba76e0bc348b1ddb10805"
+  },
+  "config_path_fields_relocated": true,
+  "default_profile": "russian_v1",
+  "files": {
+    "configs/phase_i/final_i.json": {
+      "sha256": "1ebf7c8f644c5a6f43e0c2781127a98b9affb77e153416a03ddb9c19920394b6",
+      "bytes": 1335
+    },
+    "dataset/ATTRIBUTION.md": {
+      "sha256": "69bc18068bfac404bdca1ce8536fc388e31ee5a13d574a3a456023c6aa0fa290",
+      "bytes": 7928
+    },
+    "docs/final_i_delivery.md": {
+      "sha256": "1a46a03c2b852b31a1aa17e3bb1f1aeb16e6c8b463d130acf8fde9180de5aede",
+      "bytes": 6448
+    },
+    "docs/final_i_results.md": {
+      "sha256": "e6b53974bb5c09cc8d817da3ceb82b3ad3c82757e3e73d3c41cfa978fc0d1e0c",
+      "bytes": 4763
+    },
+    "docs/type1b_format_review.md": {
+      "sha256": "e789a8633a2b5e88652dc3be4b10973f1449235136fc1ad0e9bfe2e9ffba822d",
+      "bytes": 6322
+    },
+    "models/detector/best.pt": {
+      "sha256": "e5583b60e254a47191a65a5e3e78492f99067a4e06b0578549b33d06396776ff",
+      "bytes": 5627009
+    },
+    "models/final/model_info.json": {
+      "sha256": "69437119acf4c7b34e1aff190415e43f93576b069ee3f88a80bacff95ce14c12",
+      "bytes": 2192
+    },
+    "models/ocr/best.pt": {
+      "sha256": "0f63155156ad8bac62dec469d872fd7da701ce879b5ba76e0bc348b1ddb10805",
+      "bytes": 34913421
+    },
+    "ocr/__init__.py": {
+      "sha256": "5f41242809c175761ef02a30a20b7fadb7cb873fd9a79ef874973c0445723865",
+      "bytes": 1424
+    },
+    "ocr/crnn.py": {
+      "sha256": "256e6324bf3cfa389bf4cbedee3e3e44449150503c9591e42be84276fae5bdb5",
+      "bytes": 13722
+    },
+    "ocr/utils.py": {
+      "sha256": "4d0f2c83e34bebf134940688a00f9d9ae8448bf4cc33e6618bffbf17b8c491c8",
+      "bytes": 5423
+    },
+    "provenance/detector_comparison.csv": {
+      "sha256": "9542caf06e33ada03d4b628aaeb0930a7bc2d5d6e5602a7559da2a9fb1325e91",
+      "bytes": 1652
+    },
+    "provenance/final_i.original.json": {
+      "sha256": "8225bc8b6281c291b788ba6ce5d854ec69d14aebcb164c3f854c9abe27bee6fc",
+      "bytes": 1392
+    },
+    "provenance/final_i_freeze.original.json": {
+      "sha256": "2bc6396fd049328129720b45a97a5296a353491064e544612c0781340d62dec2",
+      "bytes": 7753
+    },
+    "provenance/final_test.json": {
+      "sha256": "f2ed4755678ad890b8bd900a950a7fecdace2f45108cb688830444449b867a62",
+      "bytes": 10403
+    },
+    "provenance/final_val.json": {
+      "sha256": "640bac7f3e3026db3004b00b112d5e58d0bb9cc6c3835c1f00192161f69a50f6",
+      "bytes": 11408
+    },
+    "provenance/selection.json": {
+      "sha256": "c11e01d9895c053de9cb33d92e0ae48040b139c9e5db78b20f01f0438c7e8b75",
+      "bytes": 6434
+    },
+    "provenance/selection_policy.json": {
+      "sha256": "54ead2006f7bb443f282ce56187bd705a7fe945c9c784b50b79f0b8b97b4517a",
+      "bytes": 1322
+    },
+    "README.md": {
+      "sha256": "79d3fcef08679cdeacb995e65ee8d9a92de9d4ce898ccdf711f7438011cff9ce",
+      "bytes": 2802
+    },
+    "requirements-inference.txt": {
+      "sha256": "ba8855fff727ea28d3735b567ba54a0f04245e99b603b652a5b488cc36664504",
+      "bytes": 283
+    },
+    "run.py": {
+      "sha256": "1254e98abbde64d569efe99156070cd8bd76dd10cd59ce864cdce9a28021182f",
+      "bytes": 8406
+    },
+    "src/__init__.py": {
+      "sha256": "8b455915dd336c6eae0bfea999b9bafb018fbfacc9289e260ec7dfb7429f490f",
+      "bytes": 72
+    },
+    "src/geometry_f.py": {
+      "sha256": "95d2e7b8bdebafadbb455aed3d213794acc7643ff0a21f734b6b60476e8895f5",
+      "bytes": 3771
+    },
+    "src/image_anpr.py": {
+      "sha256": "7f39462a5e250e03b7630b603f631b2249004ad75e60823d694a1e5e4c765265",
+      "bytes": 16687
+    },
+    "src/image_anpr_f.py": {
+      "sha256": "0b78cf4a6d0e7bd66fbd2d23ceb7dee3113cd41ed89911bfdfa0f1d089042396",
+      "bytes": 10106
+    },
+    "src/image_anpr_g.py": {
+      "sha256": "79da5e408cb45aeba53d82093fc57827907e0ca7b062b2b3f16e25818c5d26a4",
+      "bytes": 6157
+    },
+    "src/inference_io.py": {
+      "sha256": "e65893edb6f5f6c91564785768acccfc59ebecc5cb21f119719e5a2bbfc5290a",
+      "bytes": 3945
+    },
+    "src/multiline.py": {
+      "sha256": "c488c7d04343071f6b9aaad6fb67352c916d023e7db53f49b34e7c4ae0d822ef",
+      "bytes": 12158
+    },
+    "src/multiline_g.py": {
+      "sha256": "409a61b2ad70cefca34a2912890f755eaefaf51ce705e22a82951a24572d9946",
+      "bytes": 6727
+    },
+    "src/ocr_preprocess.py": {
+      "sha256": "70c7a99866c19a0016eb86ba9dd1b1364a566f2f71a5cf42bcd81746df4425fb",
+      "bytes": 1627
+    },
+    "src/plate_formats.py": {
+      "sha256": "a647c4c9b97ba91b1e9718a82c815ea962be0d147b34e774ccb5a89d61ccff41",
+      "bytes": 3350
+    },
+    "src/real_data_g.py": {
+      "sha256": "9f619f189072828fcd521e2372df1cf1f4cf47afb91964b1aad4d159ed9c2c5d",
+      "bytes": 3721
+    },
+    "tools/baseline_predict.py": {
+      "sha256": "b913103e9a17ef8d7ce84dfb585b8a84365279b150d1f0d16991a2406ffe2b51",
+      "bytes": 14610
+    },
+    "tools/benchmark.py": {
+      "sha256": "0c04ab5277bdb7c8d4bf49537ec00681abda61ab1c4f5dc4e4e46623a9e31f9a",
+      "bytes": 3748
+    },
+    "tools/benchmark_inference_g.py": {
+      "sha256": "262018d2b2494313951a04b81ca3c39c484b520c98695f11b5f82b92c10d73ed",
+      "bytes": 9533
+    },
+    "tools/final_i_runtime.py": {
+      "sha256": "b35cc9658bb63c03ed801329fd7adec6a6e59880b2fb5f1fb46c95bc280ae182",
+      "bytes": 3925
+    },
+    "tools/predict_images_g.py": {
+      "sha256": "ff2d0db24681108149db1e613613f13c452b02f6c14cefef0961581a55c5458b",
+      "bytes": 4698
+    },
+    "tools/validate_output.py": {
+      "sha256": "fd96937b020e5f0782e6f8ab91793ac0c25a27e7270a09e931ee35d90df98aee",
+      "bytes": 3941
+    }
+  },
+  "name": "FINAL-I",
+  "source_freeze_sha256": "2bc6396fd049328129720b45a97a5296a353491064e544612c0781340d62dec2",
+  "model_selection_uses_test": false,
+  "submission_entry": "run.py"
+}

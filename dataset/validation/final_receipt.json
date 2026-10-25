@@ -1,0 +1,10 @@
+{
+  "original_validator_sha256": "bae77563e12a485c70eff9facdebcad8cd240f98a0186da68d821d7fa0804542",
+  "metadata_sha256": "aaf44a44419dee726d660fc4aaf7aa6a8e4a50b28dcce94b7348c5a40c50a6f9",
+  "readme_sha256": "bf3399d6a79a59fbdd02f8a6c96e6f0424ef9f1efd08c60b94777989e3756e69",
+  "report_sha256": "69420536824eb484232dbb29bb9cd06591fe060fc4497dfd0088f46a31e01937",
+  "debug_image_corpus_read": false,
+  "source_validator_modified": false,
+  "errors": 0,
+  "warnings": 113
+}

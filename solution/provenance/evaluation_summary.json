@@ -1,0 +1,158 @@
+{
+  "profile": "format_consistency_v1",
+  "validation": {
+    "baseline": {
+      "type1": {
+        "objects": 2,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "type1a": {
+        "objects": 30,
+        "correct": 23,
+        "accuracy": 0.7666666666666667
+      },
+      "type1b": {
+        "objects": 61,
+        "correct": 32,
+        "accuracy": 0.5245901639344263
+      }
+    },
+    "candidate": {
+      "type1": {
+        "objects": 2,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "type1a": {
+        "objects": 30,
+        "correct": 23,
+        "accuracy": 0.7666666666666667
+      },
+      "type1b": {
+        "objects": 61,
+        "correct": 32,
+        "accuracy": 0.5245901639344263
+      }
+    },
+    "improved": [],
+    "lost": []
+  },
+  "public": {
+    "baseline": {
+      "per_type": {
+        "type1": {
+          "gt_plates": 15,
+          "detected": 8,
+          "plate_text_correct": 6,
+          "type_correct_among_detected": 7,
+          "full_match": 6,
+          "recall_detect": 0.5333333333333333,
+          "type_accuracy": 0.875,
+          "char_accuracy": 0.559322033898305,
+          "accuracy": 0.4
+        },
+        "type1a": {
+          "gt_plates": 100,
+          "detected": 95,
+          "plate_text_correct": 78,
+          "type_correct_among_detected": 95,
+          "full_match": 78,
+          "recall_detect": 0.95,
+          "type_accuracy": 1.0,
+          "char_accuracy": 0.9165701042873696,
+          "accuracy": 0.78
+        },
+        "type1b": {
+          "gt_plates": 0,
+          "detected": 0,
+          "plate_text_correct": 0,
+          "type_correct_among_detected": 0,
+          "full_match": 0,
+          "recall_detect": null,
+          "type_accuracy": null,
+          "char_accuracy": null,
+          "accuracy": null
+        }
+      },
+      "correct": 84,
+      "precision": 0.7567567567567568,
+      "false_positives": 8,
+      "score": 0.7113783783783784
+    },
+    "candidate": {
+      "per_type": {
+        "type1": {
+          "gt_plates": 15,
+          "detected": 11,
+          "plate_text_correct": 9,
+          "type_correct_among_detected": 10,
+          "full_match": 9,
+          "recall_detect": 0.7333333333333333,
+          "type_accuracy": 0.9090909090909091,
+          "char_accuracy": 0.7796610169491526,
+          "accuracy": 0.6
+        },
+        "type1a": {
+          "gt_plates": 100,
+          "detected": 95,
+          "plate_text_correct": 78,
+          "type_correct_among_detected": 95,
+          "full_match": 78,
+          "recall_detect": 0.95,
+          "type_accuracy": 1.0,
+          "char_accuracy": 0.9165701042873696,
+          "accuracy": 0.78
+        },
+        "type1b": {
+          "gt_plates": 0,
+          "detected": 0,
+          "plate_text_correct": 0,
+          "type_correct_among_detected": 0,
+          "full_match": 0,
+          "recall_detect": null,
+          "type_accuracy": null,
+          "char_accuracy": null,
+          "accuracy": null
+        }
+      },
+      "correct": 87,
+      "precision": 0.7631578947368421,
+      "false_positives": 8,
+      "score": 0.744578947368421
+    }
+  },
+  "gates": {
+    "no_val_correct_object_lost": true,
+    "val_per_type_not_lower": true,
+    "public_per_type_not_lower": true,
+    "public_precision_not_lower": true,
+    "public_score_not_lower": true,
+    "source_unchanged": true
+  },
+  "all_gates_passed": true,
+  "weights": {
+    "detector": "e5583b60e254a47191a65a5e3e78492f99067a4e06b0578549b33d06396776ff",
+    "ocr": "0f63155156ad8bac62dec469d872fd7da701ce879b5ba76e0bc348b1ddb10805"
+  },
+  "profile_source_sha256": "7b6c09f69a15aef9e923e185991758a2295e68619c1f04cce1d825dad2814643",
+  "ordinary_reference_sha256": "cee637794c7b69c8be8d5f50b54810abed4bd61c049d373aee5ccf11d2b2840d",
+  "source_hashes": {
+    "D:\\volga\\volga-anpr\\candidates\\format_consistency_20261025\\src\\geometry_f.py": "95d2e7b8bdebafadbb455aed3d213794acc7643ff0a21f734b6b60476e8895f5",
+    "D:\\volga\\volga-anpr\\candidates\\format_consistency_20261025\\src\\image_anpr.py": "32874216ee63b570795c8fdb1b6c4d2fdd2bd8dfe15d9c408638ea63581b301d",
+    "D:\\volga\\volga-anpr\\candidates\\format_consistency_20261025\\src\\image_anpr_f.py": "767679e9a4de61e0a406802b4c2ba1c579615820186dbd98e00d9c830b5c0425",
+    "D:\\volga\\volga-anpr\\candidates\\format_consistency_20261025\\src\\image_anpr_g.py": "97f904e018fddcf74ca624c86c6d5714a2f80b1e73172e164db2d0843ebd4039",
+    "D:\\volga\\volga-anpr\\candidates\\format_consistency_20261025\\src\\inference_io.py": "06e496515e79ca47cd2df5f7d9ca2ec4a96c73d96345911e608446d58fea8943",
+    "D:\\volga\\volga-anpr\\candidates\\format_consistency_20261025\\src\\multiline.py": "c488c7d04343071f6b9aaad6fb67352c916d023e7db53f49b34e7c4ae0d822ef",
+    "D:\\volga\\volga-anpr\\candidates\\format_consistency_20261025\\src\\multiline_g.py": "6071c84593cade59301ec05da2a667c532acba20b280be95cc7f8965c57ac642",
+    "D:\\volga\\volga-anpr\\candidates\\format_consistency_20261025\\src\\ocr_preprocess.py": "03b918de27804ae7d39a4a2676ef471ace91057d3a490de74559733d43b98057",
+    "D:\\volga\\volga-anpr\\candidates\\format_consistency_20261025\\src\\plate_formats.py": "7b6c09f69a15aef9e923e185991758a2295e68619c1f04cce1d825dad2814643",
+    "D:\\volga\\volga-anpr\\candidates\\format_consistency_20261025\\src\\real_data_g.py": "9f619f189072828fcd521e2372df1cf1f4cf47afb91964b1aad4d159ed9c2c5d",
+    "D:\\volga\\volga-anpr\\candidates\\format_consistency_20261025\\src\\__init__.py": "8b455915dd336c6eae0bfea999b9bafb018fbfacc9289e260ec7dfb7429f490f",
+    "D:\\volga\\volga-anpr\\candidates\\format_consistency_20261025\\run.py": "ed51152662823aa96cb80fe2a992e7f887e58cf6cec6638279ca539e8cdc1d1d",
+    "D:\\volga\\volga-anpr\\candidates\\format_consistency_20261025\\configs\\phase_i\\final_i.json": "a3ad901334407c06aa34c5f5e99e498d18aeb815b68a2b2c78c9436b8e64a4cf"
+  },
+  "organizer_scorer_sha256": "57280a4862168ae33d31d519c81697f3990d18f8d946844f054949cc8401f1ae",
+  "scope": "Frozen 93-object VAL plus previously exposed public debug 115 targets. No independent test read.",
+  "ground_truth_in_inference": false
+}

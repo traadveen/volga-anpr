@@ -1,0 +1,37 @@
+{
+  "name": "FINAL-I",
+  "detector": "D:\\volga\\volga-anpr\\models\\phase_i\\FINAL_I.pt",
+  "detector_sha256": "e5583b60e254a47191a65a5e3e78492f99067a4e06b0578549b33d06396776ff",
+  "ocr": "D:\\volga\\volga-anpr\\models\\phase_h\\FINAL_H.pt",
+  "ocr_sha256": "0f63155156ad8bac62dec469d872fd7da701ce879b5ba76e0bc348b1ddb10805",
+  "imgsz": 640,
+  "confidence": 0.5,
+  "iou": 0.5,
+  "split": {
+    "method": "B_projection",
+    "search_min": 0.35,
+    "search_max": 0.65,
+    "row_margin": 0.025,
+    "stitch_height": 64,
+    "stitch_gap": 4,
+    "stitch_padding": 4,
+    "max_candidates": 4
+  },
+  "multi": true,
+  "postprocess": "current",
+  "expansion": {},
+  "default_backend": "pytorch",
+  "geometry": "observed OBB with unchanged F fallback",
+  "routing": "detector class only",
+  "mask": "LLDDDRR/RRR for observed type1b, LDDDLLRR/RRR for white types",
+  "selection_basis": "Frozen DATA-3 REAL VAL only; per-type protection; two fixed balanced-round variants",
+  "generalization": "NOT EVALUATED ON TEST IN PHASE I",
+  "real_test_available": true,
+  "promotion_scope": "Phase I VAL-selected detector; frozen FINAL-H OCR; BEST-G and FINAL-H preserved",
+  "runtime_gates": {
+    "measured_hardware": "GTX1060 6GB; not jury GTX1050Ti",
+    "GPU_mean_ms": 54.577053260563055,
+    "GPU_p95_ms": 105.8378750087286
+  },
+  "recognition_profile": "russian_v1"
+}

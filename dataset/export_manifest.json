@@ -1,0 +1,98 @@
+{
+  "scope": "Combined organizer dataset using existing human geometry and authored synthetic scenes",
+  "synthetic_export": {
+    "scope": "Synthetic-only organizer-format export, not final combined dataset",
+    "parts": [
+      {
+        "root": "D:\\volga\\generated_data\\current_scenes_5000_v1_20261015",
+        "manifest_sha256": "6debf6ce1b5f184246d84926d409c6c663f576846e002e7cba117d16e4457910",
+        "seed": 20261015,
+        "count": 5000,
+        "positive_images": 4138,
+        "negative_auxiliary_images": 834
+      },
+      {
+        "root": "D:\\volga\\generated_data\\current_scenes_positive_834_v1_20261016",
+        "manifest_sha256": "aad91a11c70606ad804d49ec5e83516316e48095a35b70bd795b85c177709b11",
+        "seed": 20261016,
+        "count": 834,
+        "positive_images": 828,
+        "negative_auxiliary_images": 0
+      },
+      {
+        "root": "D:\\volga\\generated_data\\current_scenes_region_replacements_34_v1",
+        "manifest_sha256": "0b4dbd6336eedcdfb15dbb5f6ba265192d3380885baacd3f7298c5c484220bbc",
+        "seed": 20261017,
+        "count": 34,
+        "positive_images": 34,
+        "negative_auxiliary_images": 0
+      }
+    ],
+    "official_synthetic_images": 5000,
+    "plate_objects": 5706,
+    "auxiliary_objectless_negatives": 834,
+    "max_corner_coordinate_error_px": 0.5,
+    "excluded_invalid_region_frames": 34,
+    "quantization": "Nearest integer corners; enclosing integer bbox; exact floats preserved in provenance",
+    "source_backgrounds": "Authored procedural graphics only",
+    "split": "unassigned",
+    "final_split_created": false,
+    "training_started": false,
+    "real_images": 0,
+    "meta_sha256": "ae8f7840359187b3037efd059637e148d7b4f6e0cf4c0b7bb8fef19a5a030c6c",
+    "exporter_sha256": "584da386560c061bae93ce6b84e307129994db4036f2f95153d8b53ca3177732",
+    "exporter_source_sha256": {
+      "generator/exporter_source/tools/export_organizer_synthetic.py": "584da386560c061bae93ce6b84e307129994db4036f2f95153d8b53ca3177732",
+      "generator/exporter_source/tools/check_organizer_synthetic.py": "81bffa38762e14482444af229a3798d89a2410e203dbce145b4ba3e84f01200a",
+      "generator/exporter_source/tools/reproduce_organizer_synthetic.py": "59ceb6ba152e81dfe30af78af75867299828f976142315befa24c62b8ea3134f",
+      "generator/exporter_source/dataset/__init__.py": "47b0ea17431f0557db2dad979c12667c97331adbbb13281afbb5a82c69b7dc4a",
+      "generator/exporter_source/dataset/schema.py": "9914307df011748cd5b4e1715418b2949d432b9c2e3c06a2dc4c546f733a8475",
+      "generator/exporter_source/src/__init__.py": "8b455915dd336c6eae0bfea999b9bafb018fbfacc9289e260ec7dfb7429f490f",
+      "generator/exporter_source/src/geometry_f.py": "95d2e7b8bdebafadbb455aed3d213794acc7643ff0a21f734b6b60476e8895f5",
+      "generator/exporter_source/src/plate_formats.py": "a647c4c9b97ba91b1e9718a82c815ea962be0d147b34e774ccb5a89d61ccff41",
+      "generator/reproduce.py": "59ceb6ba152e81dfe30af78af75867299828f976142315befa24c62b8ea3134f"
+    }
+  },
+  "official_synthetic_images": 5000,
+  "plate_objects": 5815,
+  "official_real_images": 109,
+  "real_images_by_type": {
+    "type1b": 59,
+    "type1a": 50
+  },
+  "label_only_pool_records": 503,
+  "label_only_pool_types": {
+    "type1b": 325,
+    "type1a": 171,
+    "type1": 7
+  },
+  "supplemental_is_not_official_quad_GT": true,
+  "missing_geometry_not_filled": true,
+  "meta_sha256": "aaf44a44419dee726d660fc4aaf7aa6a8e4a50b28dcce94b7348c5a40c50a6f9",
+  "source_geometry_manifest_sha256": "65113df8e605652d1a9023e3e17ad4ec5ca3066cb239c1fe4caa04da0ecd782c",
+  "permission_document_pending_ids": [
+    "64af419aab0b0a4391aaec99_target_0f337ca96e02",
+    "4f086b5b780ff3ad28f6d998_target_d5a0cafb530f",
+    "f91a8bd5c857dcd5eeb143b6_target_7f88a751029a",
+    "1374486fa7ac3eab3f576be2_target_0e10d3bddfa5",
+    "2105abada241a01c60b02591_target_af9115ad8107",
+    "04da6e75b2a406350a30f183_target_b0124c7bbdec",
+    "2cf122b21aa30a70df2ebec5_target_fa7b7a564f1e",
+    "879f4ab598778503b004793f_target_dac975159fe6",
+    "ce4a000311f9d26bd4f26aa9_target_545abe7bb195",
+    "84fecd4a6f773e6355b5b381_target_7f40f0c1ad0f",
+    "8c453700ab50ac4ca4307ace_target_a39827d761ab",
+    "bfed9679f8ee6fed035d3970_target_ba176eb6b137",
+    "0cc96adb5c6b977d2419e1b8_target_900970d92bcb",
+    "89a9e8a7a2756197a55891b8_target_aff6e11c18b5"
+  ],
+  "publication_ready": false,
+  "training_started": false,
+  "model_or_split_changed": false,
+  "new_human_GT_created": false,
+  "privacy": "Only pre-existing cropped plate regions; original full frames excluded; separate visual privacy audit required",
+  "real_unique_plates_by_type": {
+    "type1a": 50,
+    "type1b": 54
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "seed": 42,
+  "requested_ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "algorithm": "connected components (image/complete plate/group_id/RGB pixel hash), protected source split, deterministic greedy feature balance v1",
+  "meta_sha256": "ca93e9e3d06b95c6a86772272babf56fc68f5b435cd4f68ea7c86b564d2e7ca3",
+  "image_manifest": {},
+  "groups": [],
+  "splits": {
+    "train": {
+      "rows": 0,
+      "images": 0,
+      "features": {},
+      "sha256": "ca93e9e3d06b95c6a86772272babf56fc68f5b435cd4f68ea7c86b564d2e7ca3"
+    },
+    "val": {
+      "rows": 0,
+      "images": 0,
+      "features": {},
+      "sha256": "ca93e9e3d06b95c6a86772272babf56fc68f5b435cd4f68ea7c86b564d2e7ca3"
+    },
+    "test": {
+      "rows": 0,
+      "images": 0,
+      "features": {},
+      "sha256": "ca93e9e3d06b95c6a86772272babf56fc68f5b435cd4f68ea7c86b564d2e7ca3"
+    }
+  },
+  "warnings": [
+    {
+      "code": "empty_dataset",
+      "image": "",
+      "message": "Infrastructure only; no training or accuracy coverage"
+    }
+  ],
+  "training_data_present": false,
+  "partial_plate_policy": "# labels are not identities; related partial labels require group_id",
+  "protected_source_split_policy": "Never automatically mix or reassign external train/val/test",
+  "excluded_manifests": [
+    {
+      "sha256": "5f4c86e8f5e1e0f73b4fcae80f883d0b757b3a8bb4dbad1af6bbcc13be452aeb",
+      "path": "D:\\volga\\external_data\\organizer_debug\\source_manifest.json"
+    }
+  ]
+}

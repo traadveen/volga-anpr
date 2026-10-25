@@ -1,0 +1,12 @@
+{
+  "name": "F02_finetune_1280",
+  "weights": "D:\\volga\\volga-anpr\\models\\phase_f\\F02_finetune\\best.pt",
+  "weights_sha256": "7f192993c5b3314bddf1e761cb001fc8760e7868e9c8a1a5375a4f9e949b9ecc",
+  "imgsz": 1280,
+  "geometry": "bbox",
+  "routing": "geometry",
+  "fixed_OCR_sha256": "876d8510d507d983d7d911b4e5b135113e98145fe7d4184d74ae9a09262191a9",
+  "dataset_sha256": "aa4f14eaf44bfdc0007abc2a3f199e8b291bed8b26148626cc99836298e1311a",
+  "confidence": 0.5,
+  "iou": 0.5
+}

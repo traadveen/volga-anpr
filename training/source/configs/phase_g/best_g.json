@@ -1,0 +1,39 @@
+{
+  "name": "BEST-G-DEVELOPMENT",
+  "detector": "D:\\volga\\volga-anpr\\models\\phase_f\\F03_obb_transfer\\best.pt",
+  "detector_sha256": "cee637794c7b69c8be8d5f50b54810abed4bd61c049d373aee5ccf11d2b2840d",
+  "ocr": "D:\\volga\\volga-anpr\\models\\phase_g\\G06_balanced\\best.pt",
+  "ocr_sha256": "0e5d73953cbba4ea4e3361a2147eb35804179bdf8e2e236f728625ac4c662e82",
+  "imgsz": 640,
+  "confidence": 0.5,
+  "iou": 0.5,
+  "split": {
+    "method": "B_projection",
+    "search_min": 0.35,
+    "search_max": 0.65,
+    "row_margin": 0.025,
+    "stitch_height": 64,
+    "stitch_gap": 4,
+    "stitch_padding": 4,
+    "max_candidates": 4
+  },
+  "multi": true,
+  "postprocess": "current",
+  "expansion": {},
+  "default_backend": "pytorch",
+  "geometry": "observed OBB with unchanged F fallback",
+  "routing": "detector class only",
+  "mask": "LDDDLLRR/RRR for all three types",
+  "selection_basis": "Repeatedly exposed real_val80 images87 targets; balanced replay tie preference, protected type1 and synthetic val type1b. Full public score diagnostic. No independent real test.",
+  "generalization": "GENERALIZATION NOT YET VERIFIED",
+  "real_test_available": false,
+  "promotion_scope": "Development candidate; no production promotion or replacement of BEST-F",
+  "runtime_gates": {
+    "GPU_mean_ms": 61.494686000369256,
+    "GPU_p95_ms": 90.30564001150195,
+    "VRAM_reserved_MiB": 244.0,
+    "CPU_GPU_parity": "PASS",
+    "strict_GPU_mean_lt_100": true,
+    "preferred_GPU_mean_le_60": false
+  }
+}

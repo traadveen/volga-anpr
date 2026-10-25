@@ -1,0 +1,49 @@
+{
+  "version": "phase-d-large-v1",
+  "dataset_root": "D:\\volga\\generated_data\\synthetic_d_large_v1",
+  "meta_sha256": "227154d78e7eaf1bf01310dc346ca451a9da47122f0ac204f62d8016da7dfd88",
+  "generator_manifest_sha256": "c518861b78b9cf8f3dbcd5deead661f8ef010be5a9ade5c6731e8421db9100af",
+  "split_manifest_sha256": "634c8e59d9241d4d746aa231aa1ef140d30a91610ae1a3fefb942193e7ee3c29",
+  "seed": 20261002,
+  "population_seeds": {
+    "train": 20261002,
+    "val": 27183,
+    "test": 31415
+  },
+  "splits": {
+    "train": {
+      "rows": 56000,
+      "types": {
+        "type1a": 24000,
+        "type1b": 16000,
+        "type1": 16000
+      },
+      "sha256": "4064b976559cfc795ae1c1310793acb58bdc7c0def02a8c6544bd19f85934f35",
+      "export": "D:\\volga\\volga-anpr\\dataset\\splits\\ocr_train.csv"
+    },
+    "val": {
+      "rows": 7000,
+      "types": {
+        "type1a": 3000,
+        "type1": 2000,
+        "type1b": 2000
+      },
+      "sha256": "9c09461db2176f83092cf41db46973918d4150f23756b2edafc5b15057347a4c",
+      "export": "D:\\volga\\volga-anpr\\dataset\\splits\\ocr_val.csv"
+    },
+    "test": {
+      "rows": 7000,
+      "types": {
+        "type1a": 3000,
+        "type1": 2000,
+        "type1b": 2000
+      },
+      "sha256": "40f6dfdba24e73b46f57fef0f5a3d156ab0465def1cd79262bd44622adda2c31",
+      "export": "D:\\volga\\volga-anpr\\dataset\\splits\\ocr_test.csv"
+    }
+  },
+  "unique_plate_num": 70000,
+  "identity_disjoint": true,
+  "prior_smoke_identities_excluded": true,
+  "policy": "Fixed before experiments; never alter heldout identities or bytes"
+}

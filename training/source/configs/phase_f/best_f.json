@@ -1,0 +1,38 @@
+{
+  "name": "BEST-F-DEVELOPMENT",
+  "selected_experiment": "F03_obb_transfer_640_detector",
+  "detector": "D:\\volga\\volga-anpr\\models\\phase_f\\F03_obb_transfer\\best.pt",
+  "detector_sha256": "cee637794c7b69c8be8d5f50b54810abed4bd61c049d373aee5ccf11d2b2840d",
+  "ocr": "D:\\volga\\volga-anpr\\models\\phase_d\\exp_d_01_finetune\\best.pt",
+  "ocr_sha256": "876d8510d507d983d7d911b4e5b135113e98145fe7d4184d74ae9a09262191a9",
+  "imgsz": 640,
+  "geometry": "obb",
+  "routing": "detector",
+  "confidence": 0.5,
+  "iou": 0.5,
+  "image_config": {
+    "geometry_filter": "relaxed",
+    "padding": 0,
+    "deskew": "none",
+    "routing": "geometry",
+    "stitch": true,
+    "postprocess": "current",
+    "square_max_ratio": 3.0,
+    "rectify": false,
+    "upscale": true,
+    "debug": false
+  },
+  "default_backend": "pytorch",
+  "onnx_detector": "D:\\volga\\volga-anpr\\models\\phase_f\\export\\selected_detector.onnx",
+  "onnx_sha256": "8738df5ec51f2c81ba8c190277e6f1e9bf18a95777cade5adf8653472e011736",
+  "onnx_accepted": false,
+  "generalization": "GENERALIZATION NOT YET VERIFIED",
+  "selection_basis": "Previously exposed common untrained-development slice; fixed CRNN; no final synthetic test or untouched real test used",
+  "inference_source_sha256": {
+    "D:\\volga\\volga-anpr\\src\\image_anpr_f.py": "0b78cf4a6d0e7bd66fbd2d23ceb7dee3113cd41ed89911bfdfa0f1d089042396",
+    "D:\\volga\\volga-anpr\\src\\geometry_f.py": "95d2e7b8bdebafadbb455aed3d213794acc7643ff0a21f734b6b60476e8895f5",
+    "D:\\volga\\volga-anpr\\src\\image_anpr.py": "7f39462a5e250e03b7630b603f631b2249004ad75e60823d694a1e5e4c765265",
+    "D:\\volga\\volga-anpr\\src\\ocr_preprocess.py": "70c7a99866c19a0016eb86ba9dd1b1364a566f2f71a5cf42bcd81746df4425fb",
+    "D:\\volga\\volga-anpr\\src\\multiline.py": "c488c7d04343071f6b9aaad6fb67352c916d023e7db53f49b34e7c4ae0d822ef"
+  }
+}

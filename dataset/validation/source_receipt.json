@@ -1,0 +1,9 @@
+{
+  "validator": "D:\\volga\\external_data\\organizer_debug\\\u041f\u043e\u043b\u0443\u0444\u0438\u043d\u0430\u043b - public\\validate_dataset.py",
+  "sha256_before": "bae77563e12a485c70eff9facdebcad8cd240f98a0186da68d821d7fa0804542",
+  "executed_against_own_data_only": true,
+  "debug_images_or_GT_read": false,
+  "forbidden_md5_list_supplied": false,
+  "sha256_after": "bae77563e12a485c70eff9facdebcad8cd240f98a0186da68d821d7fa0804542",
+  "packaged_validator_sha256": "bae77563e12a485c70eff9facdebcad8cd240f98a0186da68d821d7fa0804542"
+}

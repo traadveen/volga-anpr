@@ -1,0 +1,85 @@
+{
+  "name": "I_DET_4_real_balanced_replay",
+  "variant": "replay",
+  "settings": {
+    "data": "D:\\volga\\generated_data\\phase_i_balanced_20261019\\replay\\data.yaml",
+    "epochs": 4,
+    "imgsz": 640,
+    "batch": 4,
+    "nbs": 4,
+    "workers": 0,
+    "device": 0,
+    "optimizer": "AdamW",
+    "lr0": 0.0003,
+    "lrf": 0.1,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 0,
+    "patience": 0,
+    "seed": 20261019,
+    "deterministic": true,
+    "amp": false,
+    "freeze": 10,
+    "mosaic": 0.0,
+    "close_mosaic": 0,
+    "fliplr": 0.0,
+    "flipud": 0.0,
+    "degrees": 5.0,
+    "scale": 0.3,
+    "translate": 0.1,
+    "shear": 0.0,
+    "perspective": 0.0,
+    "mixup": 0.0,
+    "copy_paste": 0.0,
+    "plots": false,
+    "cache": false,
+    "save": true,
+    "save_period": -1,
+    "val": false,
+    "pretrained": true,
+    "project": "D:\\volga\\volga-anpr\\runs\\phase_i",
+    "name": "I_DET_4_real_balanced_replay",
+    "exist_ok": false,
+    "verbose": false
+  },
+  "initial_weights": "D:\\volga\\volga-anpr\\models\\phase_f\\F03_obb_transfer\\best.pt",
+  "initial_sha256": "cee637794c7b69c8be8d5f50b54810abed4bd61c049d373aee5ccf11d2b2840d",
+  "dataset_manifest_sha256": "65113df8e605652d1a9023e3e17ad4ec5ca3066cb239c1fe4caa04da0ecd782c",
+  "dataset_manifest": "D:\\volga\\volga-anpr\\reports\\phase_i\\balanced_20261019\\dataset_manifest.json",
+  "selection": "Fixed four-epoch last.pt. Crop-val diagnostics never select the candidate.",
+  "OCR": "FINAL-H frozen",
+  "test_used": false,
+  "created_at": "2026-10-19T11:36:40.738173+00:00",
+  "config_sha256": "5d72abe1dd496da84c8b5ba55ceff2e3b46a360bb855c5a10c5c2199c06b26f8",
+  "checkpoint": "D:\\volga\\volga-anpr\\models\\phase_i\\I_DET_4_real_balanced_replay\\last.pt",
+  "checkpoint_sha256": "e5583b60e254a47191a65a5e3e78492f99067a4e06b0578549b33d06396776ff",
+  "initialization": [
+    {
+      "parameter_tensors_checked": 280,
+      "all_bit_exact_before_first_batch": true,
+      "first_conv_sha256": "d9c27e8fc5ff235e9728e0c3f70e62c4d2c8676bbfaded1dec37e30d4fe175e3"
+    }
+  ],
+  "epochs_completed": 4,
+  "epoch_diagnostics": [
+    {
+      "epoch": 1,
+      "peak_allocated_MiB": 592.8125
+    },
+    {
+      "epoch": 2,
+      "peak_allocated_MiB": 607.08837890625
+    },
+    {
+      "epoch": 3,
+      "peak_allocated_MiB": 621.3642578125
+    },
+    {
+      "epoch": 4,
+      "peak_allocated_MiB": 635.64013671875
+    }
+  ],
+  "training_peak_allocated_MiB": 635.64013671875,
+  "training_complete": true,
+  "promoted_to_final": false,
+  "crop_val_is_partial_type1b_only": false
+}

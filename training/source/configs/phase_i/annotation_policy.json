@@ -1,0 +1,12 @@
+{
+  "imgsz": 640,
+  "threshold": 0.5,
+  "IoU_match": 0.5,
+  "annotation_proposal_confidence": 0.05,
+  "annotation_proposal_min_bbox_IoU": 0.1,
+  "proposal_is_GT": false,
+  "size_bins": "Shorter GT bbox edge after resize longest frame edge to640: tiny<8, small[8,16), medium[16,32), large>=32 pixels. Diagnostic bins, not accuracy targets.",
+  "resolution_followup": "640 vs960 only if at least half of val misses fall into tiny/small bins; no test inspection.",
+  "training_gate": "Human-verified geometry required; never train from an empty sidecar or auto proposals. Preserve val membership and FINAL-H OCR.",
+  "full_scene_GT": "Unknown for train/val; isolated training regions require separate human completeness confirmation before ordinary YOLO export."
+}

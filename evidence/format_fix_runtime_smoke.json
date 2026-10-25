@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "windows": 10,
+  "processed_images": 10,
+  "prediction_rows": 9,
+  "matches_evaluated_demo": true,
+  "problematic_standard_plates_recovered": true,
+  "publication_verified": true
+}

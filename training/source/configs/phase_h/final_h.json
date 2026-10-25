@@ -1,0 +1,37 @@
+{
+  "name": "FINAL-H",
+  "detector": "D:\\volga\\volga-anpr\\models\\phase_f\\F03_obb_transfer\\best.pt",
+  "detector_sha256": "cee637794c7b69c8be8d5f50b54810abed4bd61c049d373aee5ccf11d2b2840d",
+  "ocr": "D:\\volga\\volga-anpr\\models\\phase_h\\FINAL_H.pt",
+  "ocr_sha256": "0f63155156ad8bac62dec469d872fd7da701ce879b5ba76e0bc348b1ddb10805",
+  "imgsz": 640,
+  "confidence": 0.5,
+  "iou": 0.5,
+  "split": {
+    "method": "B_projection",
+    "search_min": 0.35,
+    "search_max": 0.65,
+    "row_margin": 0.025,
+    "stitch_height": 64,
+    "stitch_gap": 4,
+    "stitch_padding": 4,
+    "max_candidates": 4
+  },
+  "multi": true,
+  "postprocess": "current",
+  "expansion": {},
+  "default_backend": "pytorch",
+  "geometry": "observed OBB with unchanged F fallback",
+  "routing": "detector class only",
+  "mask": "LLDDDRR/RRR for observed type1b, LDDDLLRR/RRR for white types",
+  "selection_basis": "Frozen DATA-3 real val only",
+  "generalization": "PARTIAL-GT TEST NOT YET EVALUATED",
+  "real_test_available": true,
+  "promotion_scope": "Phase H selected-object candidate, BEST-G remains available",
+  "runtime_gates": {
+    "measured_hardware": "GTX1060 6GB; not jury GTX1050Ti",
+    "GPU_mean_ms": 44.467602173901234,
+    "GPU_p95_ms": 82.10206000112522
+  },
+  "recognition_profile": "russian_v1"
+}

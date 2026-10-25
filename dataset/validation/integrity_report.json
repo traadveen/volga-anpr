@@ -1,0 +1,11 @@
+{
+  "verified_copied_images": 5000,
+  "verified_objects": 5706,
+  "max_corner_coordinate_error_px": 0.5,
+  "source_text_and_type_preserved": true,
+  "exact_float_geometry_preserved": true,
+  "source_generator_and_canonical_hashes_verified": true,
+  "real_images": 0,
+  "final_split_created": false,
+  "training_started": false
+}

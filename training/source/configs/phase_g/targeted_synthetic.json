@@ -1,0 +1,70 @@
+{
+  "seed": 20261004,
+  "samples": 360,
+  "split": {
+    "train": 180,
+    "val": 90,
+    "test": 90
+  },
+  "plate_mask": "LDDDLLRR/RRR",
+  "layout": "Canonical exact body/region character order, two rows only for type1a; all character ink preserved before degradation",
+  "font_variants": [
+    "frozen_authored_condensed",
+    "Windows_Arial_condensed_to_same_cells"
+  ],
+  "glyph_variations": {
+    "thickness_pixels": [
+      -1,
+      0,
+      1
+    ],
+    "spacing_shift_px": [
+      -2,
+      0,
+      2
+    ],
+    "region_relative_width": [
+      0.96,
+      1,
+      1.04
+    ]
+  },
+  "source_resolution_width_by_type": {
+    "type1": [
+      76,
+      120
+    ],
+    "type1a": [
+      73,
+      148
+    ]
+  },
+  "degradation": {
+    "JPEG_quality": [
+      60,
+      80,
+      95
+    ],
+    "gaussian_sigma": [
+      0,
+      0.35,
+      0.65
+    ],
+    "brightness_scale": [
+      0.65,
+      0.85,
+      1.0
+    ]
+  },
+  "type1b": "No real distribution; use authored yellow one-line control, never claim real robustness",
+  "ground_truth_checks": [
+    "independent nearest-glyph raster decoding before degradation",
+    "all character cells inside image",
+    "non-overlapping ordered cells",
+    "all ink retained",
+    "two-row ordering",
+    "source identity-disjoint from all D/F/public labels"
+  ],
+  "test_policy": "Freeze new test before selection; terminal OCR-only evaluation only, never E2E or independent real quality. This recipe is prepared for targeted augmentation, not an implicit claim that it matches real font distribution.",
+  "recipe_amendment": "Actual brightness range matched observed real crop distribution before test evaluation; generated image hashes unchanged"
+}

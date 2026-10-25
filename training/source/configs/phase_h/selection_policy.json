@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-10-18T15:08:35.204075+00:00",
+  "primary": "REAL VAL selected-object full text + type match",
+  "close_result_policy": "Within one correct val object of maximum: prefer lower complexity; then higher FPA",
+  "no_test_access": true,
+  "candidates": [
+    {
+      "name": "H0_BEST_G",
+      "checkpoint": "D:\\volga\\volga-anpr\\models\\phase_g\\G06_balanced\\best.pt",
+      "profile": "frozen_g",
+      "complexity": 0
+    },
+    {
+      "name": "H1_H_OCR_1_real_heavy",
+      "checkpoint": "D:\\volga\\volga-anpr\\models\\phase_h\\H_OCR_1_real_heavy\\best.pt",
+      "profile": "frozen_g",
+      "complexity": 2
+    },
+    {
+      "name": "H1_H_OCR_2_balanced",
+      "checkpoint": "D:\\volga\\volga-anpr\\models\\phase_h\\H_OCR_2_balanced\\best.pt",
+      "profile": "frozen_g",
+      "complexity": 2
+    },
+    {
+      "name": "H4_H0_BEST_G",
+      "checkpoint": "D:\\volga\\volga-anpr\\models\\phase_g\\G06_balanced\\best.pt",
+      "profile": "russian_v1",
+      "complexity": 1
+    },
+    {
+      "name": "H4_H1_H_OCR_1_real_heavy",
+      "checkpoint": "D:\\volga\\volga-anpr\\models\\phase_h\\H_OCR_1_real_heavy\\best.pt",
+      "profile": "russian_v1",
+      "complexity": 3
+    },
+    {
+      "name": "H4_H1_H_OCR_2_balanced",
+      "checkpoint": "D:\\volga\\volga-anpr\\models\\phase_h\\H_OCR_2_balanced\\best.pt",
+      "profile": "russian_v1",
+      "complexity": 3
+    }
+  ],
+  "H2": "SKIPPED: zero reliable real orientation/quad annotations",
+  "H3": "NOT APPLICABLE: no detector candidate",
+  "H4": "Existing russian_v1 postprocess-only paired ablation, justified by nine val POSTPROCESS failures; no new split/rectification or threshold tuning"
+}

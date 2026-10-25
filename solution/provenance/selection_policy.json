@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-10-19T11:32:44.641650+00:00",
+  "scope": "Two fixed four-epoch pilots after 50 explicit human type1a decisions",
+  "candidates": [
+    "I_DET_0_FINAL_H_reference",
+    "I_DET_3_real_balanced",
+    "I_DET_4_real_balanced_replay"
+  ],
+  "checkpoint": "Four fixed epochs; last.pt only; no crop-val selection",
+  "evaluation": "All 93 frozen REAL VAL objects; FINAL-H OCR/profile unchanged; conf .5 / resolution640",
+  "acceptance": "Both overall detector recall and FPA >= baseline; at least one strictly improves. No per-type detected/correct counts below baseline for type1/type1a/type1b.",
+  "latency": "Existing mean<100ms GPU gate; peak reserved<4096MiB. GTX1050Ti timing remains unverified.",
+  "preference": "Eligible candidates: maximum FPA, then recall, then lower GPU mean; unchanged baseline retained on no eligible improvement.",
+  "limitations": "90 real train objects, no real type1 train geometry; crop scale/context bias remains.",
+  "hyperparameter_search": "Only two predeclared variants; settings match previous round, no grid or threshold tuning",
+  "test_used": false,
+  "dataset_manifest_sha256": "65113df8e605652d1a9023e3e17ad4ec5ca3066cb239c1fe4caa04da0ecd782c",
+  "previous_policy_sha256": "14fd2137b069be262bdcf7ef5732c389e8919d7791ebbca5b25fc9c585e1afed"
+}

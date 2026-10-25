@@ -1,0 +1,52 @@
+{
+  "name": "AUDIT-FIX-20261021",
+  "confidence_semantics": "uncalibrated mean character probability; not plate correctness probability",
+  "device": "cuda",
+  "recognition_profile": "russian_v1",
+  "input_images": 3,
+  "processed_images": 3,
+  "skipped_images": 0,
+  "prediction_rows": 3,
+  "model_paths": {
+    "detector": "D:\\volga\\submission\\volga-anpr_20261024\\solution\\models\\detector\\best.pt",
+    "ocr": "D:\\volga\\submission\\volga-anpr_20261024\\solution\\models\\ocr\\best.pt"
+  },
+  "model_sha256": {
+    "detector": "e5583b60e254a47191a65a5e3e78492f99067a4e06b0578549b33d06396776ff",
+    "ocr": "0f63155156ad8bac62dec469d872fd7da701ce879b5ba76e0bc348b1ddb10805"
+  },
+  "config_sha256": "6375b367b7a978cb76795921a5422f0c81c615741c4fc7e0fbf22f85e8b96cf8",
+  "runtime_versions": {
+    "torch": "2.6.0+cu124",
+    "torchvision": "0.21.0+cu124",
+    "ultralytics": "8.4.169",
+    "numpy": "2.2.3",
+    "opencv-python": "5.0.0.93"
+  },
+  "initialization_ms": 690.1852999581024,
+  "performance": {
+    "model_initialization_ms": 690.1852999581024,
+    "gpu_name": "NVIDIA GeForce GTX 1060 6GB",
+    "peak_allocated_mib": 128.89306640625,
+    "peak_reserved_mib": 194.0
+  },
+  "ground_truth_input": false,
+  "network": "Python TCP/DNS/UDP blocked during imports, loading and recognition",
+  "output_validation": {
+    "valid": true,
+    "rows": 3,
+    "errors": [],
+    "warnings": [],
+    "format_profile": "russian_v1",
+    "predictions_modified": false
+  },
+  "publication": {
+    "version": 1,
+    "generation": "436b481121174c9cbb9e98de5992b732",
+    "files": {
+      "cuda.csv": "2b0f9da0c2ed3bb284ac6221fdc54012e9999a288f11538003bd081079f856b8",
+      "cuda.trace.json": "98026ff7b2dd3778b8433ab7ae94425781f3f7fade3a097da6c67c49cb6a4747",
+      "cuda.errors.json": "4b8e06a4f693a7dfbfec0df5bed2fcac2e1b972e4be474e4914569485f3359dd"
+    }
+  }
+}

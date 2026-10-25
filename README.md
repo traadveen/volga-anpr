@@ -1,162 +1,100 @@
-# RU ANPR — распознавание государственных регистрационных знаков
+# Volga ANPR
 
-Проект реализует полный цикл обработки видеопотока: детекция госномеров, трекинг, распознавание символов и экспорт результата в CSV. Решение ориентировано на российские прямоугольные номера гражданских автомобилей с флагом и удовлетворяет требованиям:
+Сборка FORMAT-CONSISTENCY-20261025 распознаёт российские номера на отдельных фотографиях:
+белые однострочные type1, белые двухстрочные type1a и жёлтые type1b.
 
-- Повторная фиксация одного и того же номера не чаще чем один раз в 200 мс (около 5 кадров при 25 FPS).
-- Корректная обработка неполных распознаваний (непрочитанные символы помечаются `#`).
-- Используются модели и данные, доступные для некоммерческого применения или созданные самостоятельно.
+В репозиторий включены код, три checkpoint распознавания, датасет, генератор,
+данные и материалы финального дообучения. Веса и массивы NPZ хранятся через Git LFS.
+Распознавание работает без сети. Установка Python, библиотек и загрузка LFS
+выполняются заранее с доступом к интернету.
 
-## 1. Содержимое репозитория
+## Получение файлов
 
-```
-.
-├── run.py                        # основной скрипт инференса
-├── tools/
-│   ├── train_plate.py            # дообучение детектора (YOLO11)
-│   ├── train_crnn.py             # дообучение OCR (CRNN)
-│   ├── prepare_nomeroff.py       # подготовка датасета autoriaNumberplateOcrRu
-│   └── download_hf_datasets.py   # загрузка открытых датасетов HF
-├── configs/                      # конфигурации для обучения
-├── ocr/                          # модуль CRNN и утилиты
-├── models/                       # веса детектора и OCR 
-├── data/                         # рабочая папка для датасетов
-├── README.md                     # этот документ
-└── requirements.txt
-```
+Для весов и данных необходим Git LFS. После клонирования выполните:
 
-## 2. Быстрый старт
+    git lfs install
+    git lfs pull
 
-### 2.1 Предварительные требования
+Веса должны быть настоящими бинарными файлами. Проверка целостности:
 
-- Python 3.11.
-- Знание компьютерной грамотности
+    py -3.12 verify_package.py
 
-### 2.2 Создание виртуального окружения
+Все файлы сохраняются без преобразования переносов строк: это требуется для
+контрольных сумм. Служебная папка .git и локальное окружение не входят в манифест.
 
-**Windows (PowerShell):**
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install --upgrade pip
-```
+## Установка на Windows
 
-**Linux / macOS:**
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-```
+Проверено на Windows x64 с Python 3.12. Из корня репозитория:
 
-### 2.3 Установка зависимостей
+    py -3.12 -m venv .venv
 
-- **CPU:**
-  ```bash
-  pip install -r requirements.txt
-  ```
-- **GPU (пример для CUDA 12.1):**
-  ```bash
-  pip install --index-url https://download.pytorch.org/whl/cu121 torch torchvision torchaudio
-  pip install -r requirements.txt
-  ```
+Выберите один вариант PyTorch.
 
-### 2.4 Запуск инференса
+CPU:
 
-```bash
-python run.py --input путь/до/video.mp4 --out out.csv \
-  --ocr_engine crnn --crnn_checkpoint models/ocr_crnn_nomeroff_clean.pt \
-  --ocr_every_n 1 --device auto
-```
-Однострочный пример:
-```powershell
-python run.py --input video.mp4 --out out.csv --device cuda --ocr_engine crnn --crnn_checkpoint models\ocr_crnn_nomeroff_clean.pt --ocr_every_n 1 --conf 0.5 --char_conf_thr 0.5 --char_conf_thr_letters 0.7 --char_conf_thr_digits 0.5
-```
+    .venv\Scripts\python.exe -m pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cpu
 
-По умолчанию:
-- используется детектор YOLO11 и CRNN для распознавания;
-- события дедуплируются в окне 200 мс;
-- символы с низкой уверенностью заменяются `#`;
-- при запуске без `--show` результаты печатаются только в консоль и файл.
+NVIDIA CUDA 12.4:
 
-CSV имеет формат:
-```
-time;plate_num
-00:41.44;P069XO73
-01:06.80;T455CK73
-```
+    .venv\Scripts\python.exe -m pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124
 
-### 2.5 Основные параметры запуска
+Затем:
 
-| Параметр | Назначение |
-|----------|------------|
-| `--input` | путь к видеофайлу или каталогу изображений |
-| `--out` | CSV-отчёт (по умолчанию `out.csv`) |
-| `--device {auto,cuda,cpu}` | устройство инференса |
-| `--target_fps` | целевая частота обработки (стандартно 15 FPS) |
-| `--conf`, `--iou` | threshold'ы YOLO |
-| `--match_iou`, `--max_misses` | параметры трекера |
-| `--ocr_engine {easy,paddle,crnn}` | выбор OCR |
-| `--ocr_every_n` | использовать OCR раз в N-й кадр |
-| `--char_conf_thr*` | пороги уверенности символов |
-| `--save_crops_dir` | папка для сохранения кропов |
-| `--show` | включить визуализацию (не использовать на headless-сервере) |
+    .venv\Scripts\python.exe -m pip install -r requirements.txt
+    .venv\Scripts\python.exe -m pip check
 
+Точные ранее использованные наборы версий сохранены в dependency-locks.
+Установка по сети на новом компьютере отдельно не повторялась; код этой сборки
+проверен на CPU и CUDA в существующих закреплённых окружениях.
 
+## Запуск из CMD
 
-## 3. Практические советы
+Пример для NVIDIA:
 
-- Для соблюдения лимита 100 мс используйте `--device cuda`; на CPU поднимайте `--ocr_every_n` и снижайте `--target_fps`.
-- Ложные срабатывания уменьшите, повысив `--conf`/`--iou`.
-- Дребезг треков устраняется увеличением `--match_iou` и уменьшением `--max_misses`.
-- При запуске на сервере без дисплея уберите `--show` и включите `--save_crops_dir`.
+    .venv\Scripts\python.exe run.py --input "C:\photos" --output "output\result.csv" --device cuda --show
 
-## 4. Обучение моделей при необходимости
+Для CPU замените устройство:
 
-### 4.1 Детектор (YOLO11)
+    .venv\Scripts\python.exe run.py --input "C:\photos" --output "output\result.csv" --device cpu --show
 
-1. Скачайте открытые датасеты (лицензии допускают некоммерческое использование):
-   ```bash
-   python tools/download_hf_datasets.py
-   ```
-2. При необходимости добавьте собственные кропы:
-   ```bash
-   python tools/prepare_nomeroff.py --base autoriaNumberplateOcrRu-2021-09-01
-   ```
-3. Запустите дообучение:
-   ```bash
-   python tools/train_plate.py \
-     --model yolo11n.pt \
-     --data configs/hf_detection.yaml \
-     --epochs 80 --imgsz 1280 --batch 16
-   ```
-4. Лучший чекпоинт (`runs/train/.../weights/best.pt`) скопируйте в `models/yolo11_plate.pt`.
+--show открывает каждое фото с рамками и итоговыми номерами. Любая клавиша
+показывает следующее фото; Esc продолжает распознавание без окон.
+Для показа нужны Tkinter и Pillow. Без --show графический интерфейс не используется.
 
-### 4.2 OCR (CRNN)
+Для трёх процедурных проверочных сцен выполните run_examples.cmd.
+По умолчанию используется .venv и CPU. Можно задать VOLGA_PYTHON полным путём
+к установленному Python, VOLGA_DEVICE значением cpu или cuda и добавить --show.
 
-1. Подготовьте набор:
-   ```bash
-   python tools/download_hf_datasets.py --skip-detection
-   ```
-2. Дообучите распознавание:
-   ```bash
-   python tools/train_crnn.py \
-     --data_root autoriaNumberplateOcrRu-2021-09-01 \
-     --train_dir train --val_dir val \
-     --output models/ocr_crnn_nomeroff_clean.pt \
-     --epochs 30 --batch_size 64 --device auto
-   ```
+Вход: файл либо папка JPG/JPEG/PNG/BMP без обхода подпапок.
+Выход: UTF-8 CSV с разделителем ; и полями
+image;plate_num;plate_type;confidence. Символ # означает неизвестную позицию.
+Confidence не является вероятностью правильности всего номера.
+Рядом сохраняются trace, errors и manifest в JSON.
 
-### 4.3 Источники данных
+## Проверки и результаты
 
-- **AutoriaNumberplateOcrRu (2021-09-01)** — лицензия CC BY-NC.
-- **HuggingFace/ru-license-plate-detection** и **HuggingFace/ru-license-plate-ocr** — открытые наборы с некоммерческой лицензией.
+    .venv\Scripts\python.exe -m unittest discover -s solution/tests -p "test_*.py" -v
+    .venv\Scripts\python.exe solution/tools/verify_candidate.py
 
-Все материалы соответствуют требованию использования бесплатных некоммерческих источников.
+32 проверки прошли. На public debug обычные номера улучшились с 6/15 до 9/15,
+двухстрочные сохранили 78/100. На REAL VAL жёлтые сохранили 32/61.
+Эти наборы ранее использовались в разработке и не являются независимым тестом.
+Валидатор официального датасета: 0 ошибок и 113 предупреждений.
 
-## 5. Архитектура
+Короткий замер на GTX 1060 6GB дал среднее 98,10 мс, p95 121,00 мс без чтения,
+декодирования, загрузки моделей и ожидания в окне.
+Требование скорости на GTX 1050 Ti не подтверждено.
 
-- **Детектор:** Ultralytics YOLO11 (вариант `n`).
-- **Трекер:** простая IoU-ассоциация с накоплением голосов по символам.
-- **Распознавание:** CRNN с CTC, интегрированный через модуль `ocr/`.
-- **Постобработка:** суммирование вероятностей символов, нормализация к шаблону российского номера, окно дедупликации 200 мс.
+## Состав и документация
 
+- solution: код, конфигурация и checkpoint распознавания.
+- dataset: изображения, разметка, источники, генератор и отчёт валидатора.
+- training: рецепты, входы и начальные веса финальной адаптации.
+- docs/TECHNICAL_REPORT.md: устройство, показатели и ограничения.
+- docs/explanatory_note.pdf: пояснительная записка.
+- docs/REPOSITORY.md: ветка публикации и команды Git.
+- evidence: сохранённые проверки и метрики.
+- licenses: условия сторонних компонентов.
 
+Документ о разрешении на 14 объектов Kaggle пока не приложен; прежнее заявление
+пользователя и список материалов сохранены в dataset/permissions/status.json.

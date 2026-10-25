@@ -1,0 +1,23 @@
+{
+  "status": "USER_ATTESTED_DOCUMENT_DEFERRED",
+  "document": null,
+  "document_verified": false,
+  "affected_review_ids": [
+    "64af419aab0b0a4391aaec99_target_0f337ca96e02",
+    "4f086b5b780ff3ad28f6d998_target_d5a0cafb530f",
+    "f91a8bd5c857dcd5eeb143b6_target_7f88a751029a",
+    "1374486fa7ac3eab3f576be2_target_0e10d3bddfa5",
+    "2105abada241a01c60b02591_target_af9115ad8107",
+    "04da6e75b2a406350a30f183_target_b0124c7bbdec",
+    "2cf122b21aa30a70df2ebec5_target_fa7b7a564f1e",
+    "879f4ab598778503b004793f_target_dac975159fe6",
+    "ce4a000311f9d26bd4f26aa9_target_545abe7bb195",
+    "84fecd4a6f773e6355b5b381_target_7f40f0c1ad0f",
+    "8c453700ab50ac4ca4307ace_target_a39827d761ab",
+    "bfed9679f8ee6fed035d3970_target_ba176eb6b137",
+    "0cc96adb5c6b977d2419e1b8_target_900970d92bcb",
+    "89a9e8a7a2756197a55891b8_target_aff6e11c18b5"
+  ],
+  "required_scope": "Transmission to organizers and CC BY4.0-compatible publication",
+  "user_statement": "User says permission exists and will add the document later; no source license is rewritten"
+}

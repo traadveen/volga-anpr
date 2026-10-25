@@ -1,0 +1,179 @@
+{
+  "created_at": "2026-10-19T11:41:42.973206+00:00",
+  "selected": "I_DET_4_real_balanced_replay",
+  "detector_sha256": "e5583b60e254a47191a65a5e3e78492f99067a4e06b0578549b33d06396776ff",
+  "source_checkpoint": "D:\\volga\\volga-anpr\\models\\phase_i\\I_DET_4_real_balanced_replay\\last.pt",
+  "policy_sha256": "54ead2006f7bb443f282ce56187bd705a7fe945c9c784b50b79f0b8b97b4517a",
+  "dataset_manifest_sha256": "65113df8e605652d1a9023e3e17ad4ec5ca3066cb239c1fe4caa04da0ecd782c",
+  "selection_uses_test": false,
+  "candidates": [
+    {
+      "name": "I_DET_3_real_balanced",
+      "eligible": false
+    },
+    {
+      "name": "I_DET_4_real_balanced_replay",
+      "eligible": true
+    }
+  ],
+  "selected_val_metrics": {
+    "created_at": "2026-10-19T11:38:44.507652+00:00",
+    "name": "I_DET_4_real_balanced_replay",
+    "detector": "D:\\volga\\volga-anpr\\models\\phase_i\\I_DET_4_real_balanced_replay\\last.pt",
+    "detector_sha256": "e5583b60e254a47191a65a5e3e78492f99067a4e06b0578549b33d06396776ff",
+    "OCR": "D:\\volga\\volga-anpr\\models\\phase_h\\FINAL_H.pt",
+    "OCR_sha256": "0f63155156ad8bac62dec469d872fd7da701ce879b5ba76e0bc348b1ddb10805",
+    "recognition_profile": "russian_v1",
+    "resolution": 640,
+    "confidence": 0.5,
+    "nms_iou": 0.5,
+    "overall": {
+      "objects": 93,
+      "detected": 71,
+      "recall": 0.7634408602150538,
+      "correct": 55,
+      "FPA": 0.5913978494623656,
+      "type_correct_given_detection": 0.971830985915493,
+      "OCR_text_given_detection": 0.7887323943661971,
+      "geometry_GT_objects": 19,
+      "geometry_matched_objects": 12,
+      "OBB_IoU_mean_given_match": 0.8195542716162448,
+      "angle_error_mean_deg_given_match": 2.1253484107548437,
+      "oriented_recall_at_0_5": 0.631578947368421
+    },
+    "per_type": {
+      "type1": {
+        "objects": 2,
+        "detected": 2,
+        "recall": 1.0,
+        "correct": 0,
+        "FPA": 0.0,
+        "type_correct_given_detection": 0.0,
+        "OCR_text_given_detection": 0.5,
+        "geometry_GT_objects": 0,
+        "geometry_matched_objects": 0,
+        "OBB_IoU_mean_given_match": null,
+        "angle_error_mean_deg_given_match": null,
+        "oriented_recall_at_0_5": null
+      },
+      "type1a": {
+        "objects": 30,
+        "detected": 29,
+        "recall": 0.9666666666666667,
+        "correct": 23,
+        "FPA": 0.7666666666666667,
+        "type_correct_given_detection": 1.0,
+        "OCR_text_given_detection": 0.7931034482758621,
+        "geometry_GT_objects": 10,
+        "geometry_matched_objects": 10,
+        "OBB_IoU_mean_given_match": 0.8082641992529126,
+        "angle_error_mean_deg_given_match": 2.0712679189014294,
+        "oriented_recall_at_0_5": 1.0
+      },
+      "type1b": {
+        "objects": 61,
+        "detected": 40,
+        "recall": 0.6557377049180327,
+        "correct": 32,
+        "FPA": 0.5245901639344263,
+        "type_correct_given_detection": 1.0,
+        "OCR_text_given_detection": 0.8,
+        "geometry_GT_objects": 9,
+        "geometry_matched_objects": 2,
+        "OBB_IoU_mean_given_match": 0.8760046334329057,
+        "angle_error_mean_deg_given_match": 2.3957508700219137,
+        "oriented_recall_at_0_5": 0.2222222222222222
+      }
+    },
+    "by_size": {
+      "tiny": {
+        "objects": 3,
+        "detected": 0,
+        "recall": 0.0,
+        "correct": 0,
+        "FPA": 0.0,
+        "type_correct_given_detection": null,
+        "OCR_text_given_detection": null,
+        "geometry_GT_objects": 1,
+        "geometry_matched_objects": 0,
+        "OBB_IoU_mean_given_match": null,
+        "angle_error_mean_deg_given_match": null,
+        "oriented_recall_at_0_5": 0.0
+      },
+      "small": {
+        "objects": 9,
+        "detected": 2,
+        "recall": 0.2222222222222222,
+        "correct": 2,
+        "FPA": 0.2222222222222222,
+        "type_correct_given_detection": 1.0,
+        "OCR_text_given_detection": 1.0,
+        "geometry_GT_objects": 4,
+        "geometry_matched_objects": 0,
+        "OBB_IoU_mean_given_match": null,
+        "angle_error_mean_deg_given_match": null,
+        "oriented_recall_at_0_5": 0.0
+      },
+      "medium": {
+        "objects": 12,
+        "detected": 9,
+        "recall": 0.75,
+        "correct": 5,
+        "FPA": 0.4166666666666667,
+        "type_correct_given_detection": 1.0,
+        "OCR_text_given_detection": 0.5555555555555556,
+        "geometry_GT_objects": 2,
+        "geometry_matched_objects": 1,
+        "OBB_IoU_mean_given_match": 0.8865413050135985,
+        "angle_error_mean_deg_given_match": 2.4235483431889975,
+        "oriented_recall_at_0_5": 0.5
+      },
+      "large": {
+        "objects": 69,
+        "detected": 60,
+        "recall": 0.8695652173913043,
+        "correct": 48,
+        "FPA": 0.6956521739130435,
+        "type_correct_given_detection": 0.9666666666666667,
+        "OCR_text_given_detection": 0.8166666666666667,
+        "geometry_GT_objects": 12,
+        "geometry_matched_objects": 11,
+        "OBB_IoU_mean_given_match": 0.8134645413073947,
+        "angle_error_mean_deg_given_match": 2.0982393259881023,
+        "oriented_recall_at_0_5": 0.9166666666666666
+      }
+    },
+    "failures": {
+      "CORRECT": 55,
+      "MISS": 22,
+      "OCR_OR_RECTIFICATION": 14,
+      "WRONG_CLASS": 2
+    },
+    "performance": {
+      "images": 92,
+      "warmup": 5,
+      "GPU_mean_ms": 54.577053260563055,
+      "GPU_p95_ms": 105.8378750087286,
+      "peak_allocated_MiB": 224.23046875,
+      "peak_reserved_MiB": 338.0,
+      "GPU": "NVIDIA GeForce GTX 1060 6GB",
+      "scope": "Detector + rectification + frozen FINAL-H OCR + postprocessing; excludes image decode/disk; one measured full-val pass.",
+      "jury_1050Ti_measured": false
+    },
+    "geometry_scope": {
+      "objects": 19,
+      "counts": {
+        "type1b": 9,
+        "type1a": 10
+      },
+      "limitation": "Priority human review subset; not representative full-val geometry."
+    },
+    "precision": null,
+    "FPR": null,
+    "scene_GT": "PARTIAL selected objects; additional detected plates are not labelled false positives",
+    "test_read": false,
+    "public_debug_used": false,
+    "selected_geometry_state_revision": "5b40bbb0c12a4d76986a7fd76d0d7cb6"
+  },
+  "previous_pipeline_preserved": "FINAL-H / BEST-G F03"
+}

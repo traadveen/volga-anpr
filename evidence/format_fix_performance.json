@@ -1,0 +1,15 @@
+{
+  "baseline": {
+    "images": 30,
+    "mean_ms": 62.149570000080224,
+    "p95_ms": 85.60659499999018
+  },
+  "candidate": {
+    "images": 30,
+    "mean_ms": 98.09635333334275,
+    "p95_ms": 120.99858000015047
+  },
+  "device": "NVIDIA GeForce GTX 1060 6GB",
+  "warmup_images_per_variant": 5,
+  "scope": "Ten demo images repeated three times; inference and profile only, excludes decode, disk and UI"
+}

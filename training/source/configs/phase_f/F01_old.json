@@ -1,0 +1,8 @@
+{
+  "weights": "D:\\volga\\volga-anpr\\models\\yolo11_plate.pt",
+  "imgsz": 640,
+  "confidence": 0.5,
+  "iou": 0.5,
+  "fixed_OCR": "D:\\volga\\volga-anpr\\models\\phase_d\\exp_d_01_finetune\\best.pt",
+  "image_config": "D:\\volga\\volga-anpr\\configs\\image_anpr_e.json"
+}

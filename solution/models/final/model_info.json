@@ -1,0 +1,82 @@
+{
+  "runtime": "FORMAT-CONSISTENCY-20261025",
+  "recognition_profile": "format_consistency_v1",
+  "primary_detector_sha256": "e5583b60e254a47191a65a5e3e78492f99067a4e06b0578549b33d06396776ff",
+  "ocr_sha256": "0f63155156ad8bac62dec469d872fd7da701ce879b5ba76e0bc348b1ddb10805",
+  "ordinary_reference_sha256": "cee637794c7b69c8be8d5f50b54810abed4bd61c049d373aee5ccf11d2b2840d",
+  "new_training": false,
+  "current_results": "../../../evidence/format_fix_summary.json",
+  "historical_primary_model_info": {
+    "name": "AUDIT-FIX-20261021",
+    "status": "ENGINEERING_CANDIDATE_NOT_QUALITY_QUALIFIED",
+    "model_weights_changed": false,
+    "quality_metrics_inherited": false,
+    "baseline_model_info": {
+      "name": "FINAL-I",
+      "detector": {
+        "architecture": "YOLO11n-OBB",
+        "path": "models/detector/best.pt",
+        "sha256": "e5583b60e254a47191a65a5e3e78492f99067a4e06b0578549b33d06396776ff",
+        "initialization": "F03_obb_transfer",
+        "epochs": 4,
+        "seed": 20261019,
+        "parameters": 2662092,
+        "architecture_verified_from_checkpoint": true,
+        "architecture_evidence": "../evidence/checkpoint_architecture.json"
+      },
+      "ocr": {
+        "architecture": "CRNN CNN + bidirectional LSTM + CTC",
+        "path": "models/ocr/best.pt",
+        "sha256": "0f63155156ad8bac62dec469d872fd7da701ce879b5ba76e0bc348b1ddb10805",
+        "initialization": "Phase D exp_d_01_finetune",
+        "selection": "H_OCR_1_real_heavy; validation-selected epoch",
+        "seed": 20261018
+      },
+      "routing": "Detector class only; color and OCR are not ground truth",
+      "types": [
+        "type1",
+        "type1a",
+        "type1b",
+        "other"
+      ],
+      "learned_detector_classes": [
+        "type1",
+        "type1a",
+        "type1b"
+      ],
+      "other_limitation": "No independently validated learned other-class detector",
+      "profile": "russian_v1",
+      "imgsz": 640,
+      "confidence": 0.5,
+      "nms_iou": 0.5,
+      "latency_reference_hardware_verified": false,
+      "real_test_inference_repeated": false,
+      "license_notes": "Ultralytics AGPL-3.0 conditions apply; photograph rights are separate in dataset/permissions.",
+      "dataset_version": "DATA-3 frozen_v1; Phase-I balanced_20261019",
+      "training_config": [
+        "../training/recipes/detector.json",
+        "../training/recipes/ocr.json"
+      ],
+      "metrics": {
+        "real_val_objects": 93,
+        "real_val_correct": 55,
+        "saved_test_objects": 40,
+        "saved_test_correct": 11,
+        "saved_test_is_fresh_untouched": false,
+        "full_scene_precision": null
+      },
+      "benchmark": {
+        "full_CLI_51_images_ms": 251.51411960798535,
+        "full_CLI_200_images_ms": 111.61250549994293,
+        "reference_hardware_verified": false,
+        "report": "../evidence/benchmark_cuda_200.json"
+      },
+      "vehicle_filter_ablation": {
+        "enabled": false,
+        "VAL_baseline_correct": 55,
+        "VAL_filtered_correct": 49,
+        "report": "../experiments/vehicle_filter/report.md"
+      }
+    }
+  }
+}

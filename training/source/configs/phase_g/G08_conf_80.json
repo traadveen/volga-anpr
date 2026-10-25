@@ -1,0 +1,20 @@
+{
+  "name": "G08_conf_80",
+  "split": {
+    "method": "B_projection",
+    "search_min": 0.35,
+    "search_max": 0.65,
+    "row_margin": 0.025,
+    "stitch_height": 64,
+    "stitch_gap": 4,
+    "stitch_padding": 4,
+    "max_candidates": 4
+  },
+  "multi": true,
+  "postprocess": "current",
+  "expansion": {},
+  "threshold": 0.8,
+  "data_scope": "real_val_exposed; full public/train scores diagnostic only",
+  "ocr_checkpoint": "D:\\volga\\volga-anpr\\models\\phase_g\\G06_balanced\\best.pt",
+  "no_GT_in_inference": true
+}

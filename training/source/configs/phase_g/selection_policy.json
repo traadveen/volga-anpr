@@ -1,0 +1,27 @@
+{
+  "primary": "Official E2E FPA on explicitly exposed real_val80frames87targets; never independent test accuracy",
+  "control_correct": 37,
+  "control_GT": 87,
+  "type1_floor_all": 11,
+  "type1a_floor_all": 40,
+  "overall_floor_all": 51,
+  "latency_mean_ms_max": 100,
+  "latency_preferred_ms": 60,
+  "peak_torch_allocated_MiB_max": 4096,
+  "ties": "simpler and faster; bounded candidates, no oracle/GT in inference",
+  "allowed_real_thresholds": [
+    0.2,
+    0.35,
+    0.5,
+    0.65,
+    0.8
+  ],
+  "OBB_total_size_expansion": [
+    0,
+    0.02,
+    0.04,
+    0.06
+  ],
+  "no_real_type1b": "No real type1b present; keep user mask LDDDLLRR/RRR; only synthetic regression support",
+  "new_test": "Unavailable; retain honest engineering-only designation"
+}

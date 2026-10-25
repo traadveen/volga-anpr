@@ -1,0 +1,742 @@
+[
+  {
+    "epoch": 1,
+    "loss": 1.058383971452713,
+    "real_train": {
+      "FPA": 0.42162162162162165,
+      "correct": 156,
+      "count": 370,
+      "per_type": {
+        "type1": {
+          "count": 5,
+          "correct": 3,
+          "FPA": 0.6
+        },
+        "type1a": {
+          "count": 121,
+          "correct": 77,
+          "FPA": 0.6363636363636364
+        },
+        "type1b": {
+          "count": 244,
+          "correct": 76,
+          "FPA": 0.3114754098360656
+        }
+      }
+    },
+    "real_val": {
+      "FPA": 0.34408602150537637,
+      "correct": 32,
+      "count": 93,
+      "per_type": {
+        "type1": {
+          "count": 2,
+          "correct": 0,
+          "FPA": 0.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 19,
+          "FPA": 0.6333333333333333
+        },
+        "type1b": {
+          "count": 61,
+          "correct": 13,
+          "FPA": 0.21311475409836064
+        }
+      }
+    },
+    "synthetic_control": {
+      "FPA": 0.9,
+      "correct": 81,
+      "count": 90,
+      "per_type": {
+        "type1": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1b": {
+          "count": 30,
+          "correct": 21,
+          "FPA": 0.7
+        }
+      }
+    },
+    "improved": true,
+    "stale_epochs": 0,
+    "elapsed_seconds": 12.632325099999434,
+    "peak_allocated_MiB": 571.13671875
+  },
+  {
+    "epoch": 2,
+    "loss": 0.5562532090892395,
+    "real_train": {
+      "FPA": 0.5027027027027027,
+      "correct": 186,
+      "count": 370,
+      "per_type": {
+        "type1": {
+          "count": 5,
+          "correct": 4,
+          "FPA": 0.8
+        },
+        "type1a": {
+          "count": 121,
+          "correct": 85,
+          "FPA": 0.7024793388429752
+        },
+        "type1b": {
+          "count": 244,
+          "correct": 97,
+          "FPA": 0.3975409836065574
+        }
+      }
+    },
+    "real_val": {
+      "FPA": 0.3548387096774194,
+      "correct": 33,
+      "count": 93,
+      "per_type": {
+        "type1": {
+          "count": 2,
+          "correct": 0,
+          "FPA": 0.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 18,
+          "FPA": 0.6
+        },
+        "type1b": {
+          "count": 61,
+          "correct": 15,
+          "FPA": 0.2459016393442623
+        }
+      }
+    },
+    "synthetic_control": {
+      "FPA": 0.9666666666666667,
+      "correct": 87,
+      "count": 90,
+      "per_type": {
+        "type1": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1b": {
+          "count": 30,
+          "correct": 27,
+          "FPA": 0.9
+        }
+      }
+    },
+    "improved": true,
+    "stale_epochs": 0,
+    "elapsed_seconds": 22.8770594000016,
+    "peak_allocated_MiB": 571.13671875
+  },
+  {
+    "epoch": 3,
+    "loss": 0.367602592955033,
+    "real_train": {
+      "FPA": 0.5594594594594594,
+      "correct": 207,
+      "count": 370,
+      "per_type": {
+        "type1": {
+          "count": 5,
+          "correct": 5,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 121,
+          "correct": 91,
+          "FPA": 0.7520661157024794
+        },
+        "type1b": {
+          "count": 244,
+          "correct": 111,
+          "FPA": 0.45491803278688525
+        }
+      }
+    },
+    "real_val": {
+      "FPA": 0.3870967741935484,
+      "correct": 36,
+      "count": 93,
+      "per_type": {
+        "type1": {
+          "count": 2,
+          "correct": 0,
+          "FPA": 0.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 20,
+          "FPA": 0.6666666666666666
+        },
+        "type1b": {
+          "count": 61,
+          "correct": 16,
+          "FPA": 0.26229508196721313
+        }
+      }
+    },
+    "synthetic_control": {
+      "FPA": 0.9666666666666667,
+      "correct": 87,
+      "count": 90,
+      "per_type": {
+        "type1": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1b": {
+          "count": 30,
+          "correct": 27,
+          "FPA": 0.9
+        }
+      }
+    },
+    "improved": true,
+    "stale_epochs": 0,
+    "elapsed_seconds": 33.06496580000021,
+    "peak_allocated_MiB": 571.13671875
+  },
+  {
+    "epoch": 4,
+    "loss": 0.3099810358447333,
+    "real_train": {
+      "FPA": 0.6054054054054054,
+      "correct": 224,
+      "count": 370,
+      "per_type": {
+        "type1": {
+          "count": 5,
+          "correct": 5,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 121,
+          "correct": 97,
+          "FPA": 0.8016528925619835
+        },
+        "type1b": {
+          "count": 244,
+          "correct": 122,
+          "FPA": 0.5
+        }
+      }
+    },
+    "real_val": {
+      "FPA": 0.3978494623655914,
+      "correct": 37,
+      "count": 93,
+      "per_type": {
+        "type1": {
+          "count": 2,
+          "correct": 0,
+          "FPA": 0.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 20,
+          "FPA": 0.6666666666666666
+        },
+        "type1b": {
+          "count": 61,
+          "correct": 17,
+          "FPA": 0.2786885245901639
+        }
+      }
+    },
+    "synthetic_control": {
+      "FPA": 0.9888888888888889,
+      "correct": 89,
+      "count": 90,
+      "per_type": {
+        "type1": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1b": {
+          "count": 30,
+          "correct": 29,
+          "FPA": 0.9666666666666667
+        }
+      }
+    },
+    "improved": true,
+    "stale_epochs": 0,
+    "elapsed_seconds": 43.26251709999997,
+    "peak_allocated_MiB": 571.13671875
+  },
+  {
+    "epoch": 5,
+    "loss": 0.23539518793889633,
+    "real_train": {
+      "FPA": 0.6567567567567567,
+      "correct": 243,
+      "count": 370,
+      "per_type": {
+        "type1": {
+          "count": 5,
+          "correct": 5,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 121,
+          "correct": 103,
+          "FPA": 0.8512396694214877
+        },
+        "type1b": {
+          "count": 244,
+          "correct": 135,
+          "FPA": 0.5532786885245902
+        }
+      }
+    },
+    "real_val": {
+      "FPA": 0.40860215053763443,
+      "correct": 38,
+      "count": 93,
+      "per_type": {
+        "type1": {
+          "count": 2,
+          "correct": 0,
+          "FPA": 0.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 20,
+          "FPA": 0.6666666666666666
+        },
+        "type1b": {
+          "count": 61,
+          "correct": 18,
+          "FPA": 0.29508196721311475
+        }
+      }
+    },
+    "synthetic_control": {
+      "FPA": 0.9888888888888889,
+      "correct": 89,
+      "count": 90,
+      "per_type": {
+        "type1": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1b": {
+          "count": 30,
+          "correct": 29,
+          "FPA": 0.9666666666666667
+        }
+      }
+    },
+    "improved": true,
+    "stale_epochs": 0,
+    "elapsed_seconds": 53.37791660000221,
+    "peak_allocated_MiB": 571.13671875
+  },
+  {
+    "epoch": 6,
+    "loss": 0.18740540059904257,
+    "real_train": {
+      "FPA": 0.6891891891891891,
+      "correct": 255,
+      "count": 370,
+      "per_type": {
+        "type1": {
+          "count": 5,
+          "correct": 5,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 121,
+          "correct": 106,
+          "FPA": 0.8760330578512396
+        },
+        "type1b": {
+          "count": 244,
+          "correct": 144,
+          "FPA": 0.5901639344262295
+        }
+      }
+    },
+    "real_val": {
+      "FPA": 0.44086021505376344,
+      "correct": 41,
+      "count": 93,
+      "per_type": {
+        "type1": {
+          "count": 2,
+          "correct": 0,
+          "FPA": 0.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 22,
+          "FPA": 0.7333333333333333
+        },
+        "type1b": {
+          "count": 61,
+          "correct": 19,
+          "FPA": 0.3114754098360656
+        }
+      }
+    },
+    "synthetic_control": {
+      "FPA": 1.0,
+      "correct": 90,
+      "count": 90,
+      "per_type": {
+        "type1": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1b": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        }
+      }
+    },
+    "improved": true,
+    "stale_epochs": 0,
+    "elapsed_seconds": 64.03373750000173,
+    "peak_allocated_MiB": 571.13671875
+  },
+  {
+    "epoch": 7,
+    "loss": 0.16396370891015977,
+    "real_train": {
+      "FPA": 0.7243243243243244,
+      "correct": 268,
+      "count": 370,
+      "per_type": {
+        "type1": {
+          "count": 5,
+          "correct": 5,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 121,
+          "correct": 110,
+          "FPA": 0.9090909090909091
+        },
+        "type1b": {
+          "count": 244,
+          "correct": 153,
+          "FPA": 0.6270491803278688
+        }
+      }
+    },
+    "real_val": {
+      "FPA": 0.46236559139784944,
+      "correct": 43,
+      "count": 93,
+      "per_type": {
+        "type1": {
+          "count": 2,
+          "correct": 0,
+          "FPA": 0.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 22,
+          "FPA": 0.7333333333333333
+        },
+        "type1b": {
+          "count": 61,
+          "correct": 21,
+          "FPA": 0.3442622950819672
+        }
+      }
+    },
+    "synthetic_control": {
+      "FPA": 1.0,
+      "correct": 90,
+      "count": 90,
+      "per_type": {
+        "type1": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1b": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        }
+      }
+    },
+    "improved": true,
+    "stale_epochs": 0,
+    "elapsed_seconds": 74.27155929999935,
+    "peak_allocated_MiB": 571.13671875
+  },
+  {
+    "epoch": 8,
+    "loss": 0.15908355475403368,
+    "real_train": {
+      "FPA": 0.7432432432432432,
+      "correct": 275,
+      "count": 370,
+      "per_type": {
+        "type1": {
+          "count": 5,
+          "correct": 5,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 121,
+          "correct": 111,
+          "FPA": 0.9173553719008265
+        },
+        "type1b": {
+          "count": 244,
+          "correct": 159,
+          "FPA": 0.6516393442622951
+        }
+      }
+    },
+    "real_val": {
+      "FPA": 0.45161290322580644,
+      "correct": 42,
+      "count": 93,
+      "per_type": {
+        "type1": {
+          "count": 2,
+          "correct": 0,
+          "FPA": 0.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 21,
+          "FPA": 0.7
+        },
+        "type1b": {
+          "count": 61,
+          "correct": 21,
+          "FPA": 0.3442622950819672
+        }
+      }
+    },
+    "synthetic_control": {
+      "FPA": 1.0,
+      "correct": 90,
+      "count": 90,
+      "per_type": {
+        "type1": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1b": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        }
+      }
+    },
+    "improved": false,
+    "stale_epochs": 1,
+    "elapsed_seconds": 84.48011810000025,
+    "peak_allocated_MiB": 571.13671875
+  },
+  {
+    "epoch": 9,
+    "loss": 0.1056160027704512,
+    "real_train": {
+      "FPA": 0.7702702702702703,
+      "correct": 285,
+      "count": 370,
+      "per_type": {
+        "type1": {
+          "count": 5,
+          "correct": 5,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 121,
+          "correct": 110,
+          "FPA": 0.9090909090909091
+        },
+        "type1b": {
+          "count": 244,
+          "correct": 170,
+          "FPA": 0.6967213114754098
+        }
+      }
+    },
+    "real_val": {
+      "FPA": 0.45161290322580644,
+      "correct": 42,
+      "count": 93,
+      "per_type": {
+        "type1": {
+          "count": 2,
+          "correct": 0,
+          "FPA": 0.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 21,
+          "FPA": 0.7
+        },
+        "type1b": {
+          "count": 61,
+          "correct": 21,
+          "FPA": 0.3442622950819672
+        }
+      }
+    },
+    "synthetic_control": {
+      "FPA": 1.0,
+      "correct": 90,
+      "count": 90,
+      "per_type": {
+        "type1": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1b": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        }
+      }
+    },
+    "improved": false,
+    "stale_epochs": 2,
+    "elapsed_seconds": 94.25525310000012,
+    "peak_allocated_MiB": 571.13671875
+  },
+  {
+    "epoch": 10,
+    "loss": 0.08698366621198754,
+    "real_train": {
+      "FPA": 0.7891891891891892,
+      "correct": 292,
+      "count": 370,
+      "per_type": {
+        "type1": {
+          "count": 5,
+          "correct": 5,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 121,
+          "correct": 112,
+          "FPA": 0.9256198347107438
+        },
+        "type1b": {
+          "count": 244,
+          "correct": 175,
+          "FPA": 0.7172131147540983
+        }
+      }
+    },
+    "real_val": {
+      "FPA": 0.45161290322580644,
+      "correct": 42,
+      "count": 93,
+      "per_type": {
+        "type1": {
+          "count": 2,
+          "correct": 0,
+          "FPA": 0.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 21,
+          "FPA": 0.7
+        },
+        "type1b": {
+          "count": 61,
+          "correct": 21,
+          "FPA": 0.3442622950819672
+        }
+      }
+    },
+    "synthetic_control": {
+      "FPA": 1.0,
+      "correct": 90,
+      "count": 90,
+      "per_type": {
+        "type1": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1a": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        },
+        "type1b": {
+          "count": 30,
+          "correct": 30,
+          "FPA": 1.0
+        }
+      }
+    },
+    "improved": false,
+    "stale_epochs": 3,
+    "elapsed_seconds": 104.36227860000145,
+    "peak_allocated_MiB": 571.13671875
+  }
+]

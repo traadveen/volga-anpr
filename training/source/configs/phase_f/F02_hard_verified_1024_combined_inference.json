@@ -1,0 +1,12 @@
+{
+  "name": "F02_hard_verified_1024_combined",
+  "weights": "D:\\volga\\volga-anpr\\models\\phase_f\\F02_hard_verified\\best.pt",
+  "weights_sha256": "c38bb6799f9e8b572c4e86edd825f3f2f2d1e60b6e6d4184bf05929cc540eb98",
+  "imgsz": 1024,
+  "geometry": "bbox",
+  "routing": "combined",
+  "fixed_OCR_sha256": "876d8510d507d983d7d911b4e5b135113e98145fe7d4184d74ae9a09262191a9",
+  "dataset_sha256": "0b62806f5cecdc52932f7684c88dd143308d71a2aead14a6f3c7cc91ae842e32",
+  "confidence": 0.5,
+  "iou": 0.5
+}

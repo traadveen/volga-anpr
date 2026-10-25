@@ -1,0 +1,79 @@
+{
+  "created_at": "2026-10-18T11:01:22.494207+00:00",
+  "status": "FROZEN_TARGET_LEVEL_SPLIT",
+  "final_split_created": true,
+  "independent_test_available": true,
+  "independent_test_finalized": true,
+  "training_allowed": false,
+  "training_started": false,
+  "model_evaluation_performed": false,
+  "scope": "Target-level OCR/type and known-bbox pilot; no exhaustive full-scene precision claim",
+  "full_image_detection_export_ready": false,
+  "organizer_real_export_ready": false,
+  "independent_test_counts": {
+    "type1a": {
+      "images": 20,
+      "unique_plates": 20
+    },
+    "type1b": {
+      "images": 20,
+      "unique_plates": 20
+    }
+  },
+  "splits": {
+    "train": {
+      "path": "D:\\volga\\datasets\\reports\\data3_2026_10_16\\proposal_v4_holdout_reserved\\train.csv",
+      "sha256": "4eb10764b246b8c7c09a0b126a94663fe9b9325e2f2545bb5f87b0664fd1efba",
+      "records": 370
+    },
+    "val": {
+      "path": "D:\\volga\\datasets\\reports\\data3_2026_10_16\\proposal_v4_holdout_reserved\\val.csv",
+      "sha256": "6cecf6667c3dc60e3f76257223584c841aabe6738b054d52a42ca134d1389589",
+      "records": 93
+    },
+    "untouched_test": {
+      "path": "D:\\volga\\datasets\\reports\\data3_2026_10_18\\frozen_v1\\untouched_test.csv",
+      "sha256": "d8fcd6f97a1b4faa064d9fed34b6e66153eb1b40c88f71724c89ecf922264be1",
+      "records": 40
+    },
+    "reserve_exposure_unconfirmed": {
+      "path": "D:\\volga\\datasets\\reports\\data3_2026_10_16\\proposal_v4_holdout_reserved\\reserve_exposure_unconfirmed.csv",
+      "sha256": "1cd50add214f7a3294317be1c1080144d3cd0eba239f1bf9d4342dc932925cb6",
+      "records": 2
+    },
+    "hold_source_or_label_issue": {
+      "path": "D:\\volga\\datasets\\reports\\data3_2026_10_16\\proposal_v4_holdout_reserved\\hold_source_or_label_issue.csv",
+      "sha256": "1a337730d34ce4205d0e75415a262c23f18b8352b5c8194150d4ebee7792dcc2",
+      "records": 1
+    }
+  },
+  "records_total": 506,
+  "leakage_violations": 0,
+  "source_family_disjoint": false,
+  "independence": "Documented local development only; unknown external pretraining cannot be excluded",
+  "development_manifest": {
+    "path": "D:\\volga\\datasets\\reports\\data3_2026_10_16\\proposal_v4_holdout_reserved\\manifest.json",
+    "sha256": "46d6aa8f6e11216d041e290129a8b9c25e107c242383d3df37d6bdf7e0328c45"
+  },
+  "audit_script_sha256": "4e0494a461a1209da0b1400656d79b912a71a479e5929d263a53d4358b5a2e30",
+  "freeze_script_sha256": "cde3c38ddda4730ceeb5d4f9899f9d5f911a3b8d2008eb4d7b2a49942e5012c5",
+  "human_state_sha256": "b807aceeed2a39927a3737a68f016675904d04688e5a9ee04d97996340b92c6b",
+  "frozen_asset_hashes": {
+    "D:\\volga\\volga-anpr\\configs\\phase_g\\best_g.json": "2fbf7e4fd10bfcd232232365f09ead1ca7b111ff42cc370779341bae1b38e89c",
+    "D:\\volga\\volga-anpr\\models\\phase_f\\F03_obb_transfer\\best.pt": "cee637794c7b69c8be8d5f50b54810abed4bd61c049d373aee5ccf11d2b2840d",
+    "D:\\volga\\volga-anpr\\models\\phase_g\\G06_balanced\\best.pt": "0e5d73953cbba4ea4e3361a2147eb35804179bdf8e2e236f728625ac4c662e82"
+  },
+  "rules": [
+    "Never use test for fitting, thresholds, postprocessing or model selection",
+    "Choose pipeline using train/val before first test measurement",
+    "After model changes informed by test results, report exposed status or obtain fresh test"
+  ],
+  "artifacts": {
+    "human_completion_audit.json": "4bd5cbbd58441e0959abd1e61d777b0999be5cb4c3ba6a13ad13ebfd02a392a2",
+    "human_test_state_snapshot.json": "b807aceeed2a39927a3737a68f016675904d04688e5a9ee04d97996340b92c6b",
+    "protocol.json": "1f1bc40f0a5b1fdf97185c106339726ddcaec54d1c5e165f631010baf505e73d",
+    "test_gt.json": "4ad176061098a1e8c0f8041ee1b44e16eeaacf41cb43f3adc127e29463017872",
+    "test_source_provenance.json": "9b19924f459dfea69addd8b8921ffff2e93ab4bdfde3d11c0d10d5e76572f0dc",
+    "untouched_test.csv": "d8fcd6f97a1b4faa064d9fed34b6e66153eb1b40c88f71724c89ecf922264be1"
+  }
+}

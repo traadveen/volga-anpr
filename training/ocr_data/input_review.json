@@ -1,0 +1,8 @@
+{
+  "status": "PASS_WITH_PREPROCESS_ELIGIBILITY_FILTER",
+  "prepared_sha256": "9f0a70732f3a945688518d70c5790e0c0102e5801fccfc9e325634bb090d6648",
+  "visual_montage": "real_inputs_review.jpg",
+  "reviewer": "Automated representation QA, not human GT",
+  "observation": "Some automatic type1a candidates remain unsplit; optimizer uses only existing split_and_stitch candidates. If none, sample held from optimization only; val unchanged.",
+  "excluded": []
+}

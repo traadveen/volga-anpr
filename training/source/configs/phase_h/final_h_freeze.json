@@ -1,0 +1,39 @@
+{
+  "status": "FINAL-H-FROZEN",
+  "created_at": "2026-10-18T15:10:37.464243+00:00",
+  "selected": "H4_H1_H_OCR_1_real_heavy",
+  "split_manifest_sha256": "cdf0de8995c8df1f4c697003c24b051c6ff3df4b5c31c51d5e372c32980253dc",
+  "hashes": {
+    "D:\\volga\\volga-anpr\\configs\\phase_h\\final_h.json": "51f8247200f68423d786253e9540736d11a8e8008dd1f425ab22af78d907130b",
+    "D:\\volga\\volga-anpr\\configs\\phase_h\\selection_policy.json": "56a971907d3cc2078e81527b5ad1c1085b389e2410e9d97d0e1a50a6f8b73e54",
+    "D:\\volga\\volga-anpr\\reports\\phase_h\\selection.json": "f2055db29ccbacd57e3304d65a30fa0b451c2a0abadf36942d676a7301fdb0b3",
+    "D:\\volga\\volga-anpr\\models\\phase_h\\FINAL_H.pt": "0f63155156ad8bac62dec469d872fd7da701ce879b5ba76e0bc348b1ddb10805",
+    "D:\\volga\\volga-anpr\\models\\phase_f\\F03_obb_transfer\\best.pt": "cee637794c7b69c8be8d5f50b54810abed4bd61c049d373aee5ccf11d2b2840d",
+    "D:\\volga\\volga-anpr\\configs\\phase_g\\best_g.json": "2fbf7e4fd10bfcd232232365f09ead1ca7b111ff42cc370779341bae1b38e89c",
+    "D:\\volga\\volga-anpr\\src\\image_anpr_g.py": "79da5e408cb45aeba53d82093fc57827907e0ca7b062b2b3f16e25818c5d26a4",
+    "D:\\volga\\volga-anpr\\src\\image_anpr_f.py": "0b78cf4a6d0e7bd66fbd2d23ceb7dee3113cd41ed89911bfdfa0f1d089042396",
+    "D:\\volga\\volga-anpr\\src\\image_anpr.py": "7f39462a5e250e03b7630b603f631b2249004ad75e60823d694a1e5e4c765265",
+    "D:\\volga\\volga-anpr\\src\\multiline_g.py": "409a61b2ad70cefca34a2912890f755eaefaf51ce705e22a82951a24572d9946",
+    "D:\\volga\\volga-anpr\\src\\geometry_f.py": "95d2e7b8bdebafadbb455aed3d213794acc7643ff0a21f734b6b60476e8895f5",
+    "D:\\volga\\volga-anpr\\src\\ocr_preprocess.py": "70c7a99866c19a0016eb86ba9dd1b1364a566f2f71a5cf42bcd81746df4425fb",
+    "D:\\volga\\volga-anpr\\src\\multiline.py": "c488c7d04343071f6b9aaad6fb67352c916d023e7db53f49b34e7c4ae0d822ef",
+    "D:\\volga\\volga-anpr\\src\\plate_formats.py": "a647c4c9b97ba91b1e9718a82c815ea962be0d147b34e774ccb5a89d61ccff41",
+    "D:\\volga\\volga-anpr\\src\\real_data_g.py": "9f619f189072828fcd521e2372df1cf1f4cf47afb91964b1aad4d159ed9c2c5d",
+    "D:\\volga\\volga-anpr\\ocr\\crnn.py": "256e6324bf3cfa389bf4cbedee3e3e44449150503c9591e42be84276fae5bdb5",
+    "D:\\volga\\volga-anpr\\ocr\\utils.py": "4d0f2c83e34bebf134940688a00f9d9ae8448bf4cc33e6618bffbf17b8c491c8",
+    "D:\\volga\\volga-anpr\\tools\\phase_h_common.py": "3160777817d54d36b3a96bd420223402be7a89eb4bf44ce82ba38707744e5716",
+    "D:\\volga\\volga-anpr\\tools\\phase_h_evaluate.py": "589917869d41992ed4973cef2f247058c9beecbfd4b7b94a6de2e4b19abcea9f",
+    "D:\\volga\\volga-anpr\\tools\\phase_h_train.py": "fc617da97612d6a966779a42a738525e267f5bf54e96a27fb5fc34f598d087b1",
+    "D:\\volga\\volga-anpr\\tools\\phase_h_finish.py": "dbf624d2f62a84cb95d2ecf0968be474cec9dd31487fd8b060973cc836e4f345",
+    "D:\\volga\\volga-anpr\\tools\\predict_images_h.py": "997012096b3fb4490cb8811bcaacc9e29e3d24d6ce6313c9075886a4fce9dea9"
+  },
+  "selected_source_checkpoint": "D:\\volga\\volga-anpr\\models\\phase_h\\H_OCR_1_real_heavy\\best.pt",
+  "selection_uses_test": false,
+  "test_prediction_runs_before_freeze": 0,
+  "changes_after_test_forbidden": true,
+  "scope": "PARTIAL-GT INDEPENDENT TEST selected objects",
+  "performance_gate": {
+    "1060_mean_lt_100ms": true,
+    "1050Ti_gate": "UNVERIFIED: hardware unavailable"
+  }
+}

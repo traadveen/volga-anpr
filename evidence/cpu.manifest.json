@@ -1,0 +1,52 @@
+{
+  "name": "AUDIT-FIX-20261021",
+  "confidence_semantics": "uncalibrated mean character probability; not plate correctness probability",
+  "device": "cpu",
+  "recognition_profile": "russian_v1",
+  "input_images": 3,
+  "processed_images": 3,
+  "skipped_images": 0,
+  "prediction_rows": 3,
+  "model_paths": {
+    "detector": "D:\\volga\\submission\\volga-anpr_20261024\\solution\\models\\detector\\best.pt",
+    "ocr": "D:\\volga\\submission\\volga-anpr_20261024\\solution\\models\\ocr\\best.pt"
+  },
+  "model_sha256": {
+    "detector": "e5583b60e254a47191a65a5e3e78492f99067a4e06b0578549b33d06396776ff",
+    "ocr": "0f63155156ad8bac62dec469d872fd7da701ce879b5ba76e0bc348b1ddb10805"
+  },
+  "config_sha256": "6375b367b7a978cb76795921a5422f0c81c615741c4fc7e0fbf22f85e8b96cf8",
+  "runtime_versions": {
+    "torch": "2.6.0+cpu",
+    "torchvision": "0.21.0+cpu",
+    "ultralytics": "8.4.169",
+    "numpy": "2.2.3",
+    "opencv-python": "5.0.0.93"
+  },
+  "initialization_ms": 1018.3716000174172,
+  "performance": {
+    "model_initialization_ms": 1018.3716000174172,
+    "gpu_name": null,
+    "peak_allocated_mib": null,
+    "peak_reserved_mib": null
+  },
+  "ground_truth_input": false,
+  "network": "Python TCP/DNS/UDP blocked during imports, loading and recognition",
+  "output_validation": {
+    "valid": true,
+    "rows": 3,
+    "errors": [],
+    "warnings": [],
+    "format_profile": "russian_v1",
+    "predictions_modified": false
+  },
+  "publication": {
+    "version": 1,
+    "generation": "8634729a48554dad96c5491f777aced1",
+    "files": {
+      "cpu.csv": "f3a9b40ec6544b3be27340365e05a68f386ef6b64563bd77a51fe3a908a8c25b",
+      "cpu.trace.json": "16adb5a8e7d1fcf4091775be2f38d75dbe81552f1db44e674f2cc53f95a59d71",
+      "cpu.errors.json": "2ce5d6d39c890eaa6b2a8cfa4da598c8b814e14014f04a06fc87be46c1d1358a"
+    }
+  }
+}

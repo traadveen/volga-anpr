@@ -1,0 +1,4 @@
+image;plate_num;plate_type;confidence
+type1.png;O944AA598;type1;0.9997262159983317
+type1a.png;K327YY55;type1a;0.9996476694941521
+type1b.png;AA795755;type1b;0.9998995438218117

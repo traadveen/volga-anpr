@@ -1,0 +1,70 @@
+{
+  "stats": {
+    "validator_version": "1.0",
+    "dataset_root": "D:\\volga\\generated_data\\organizer_synthetic_5000_v3_20261015",
+    "images_total": 5000,
+    "images_real": 0,
+    "images_synthetic": 5000,
+    "images_without_meta": 0,
+    "meta_rows": 5706,
+    "plates_by_type": {
+      "type1b": 2281,
+      "type1a": 2279,
+      "type1": 1146
+    },
+    "real_images_by_type": {
+      "type1a": 0,
+      "type1b": 0,
+      "other": 0
+    },
+    "real_unique_plates_by_type": {
+      "type1a": 0,
+      "type1b": 0
+    },
+    "conditions": {
+      "angle": 5343
+    },
+    "sources_top": {
+      "own_generator:scene_current_v1": 5706
+    },
+    "licenses": {
+      "CC-BY-4.0": 5706
+    },
+    "duplicate_images": 0,
+    "debug_set_hits": 0,
+    "errors": 0,
+    "warnings": 5
+  },
+  "issues": [
+    {
+      "level": "WARNING",
+      "code": "volume",
+      "where": "<root>",
+      "message": "реальных изображений type1a: 0, рекомендуется не менее 150"
+    },
+    {
+      "level": "WARNING",
+      "code": "volume",
+      "where": "<root>",
+      "message": "реальных изображений type1b: 0, рекомендуется не менее 300"
+    },
+    {
+      "level": "WARNING",
+      "code": "volume",
+      "where": "<root>",
+      "message": "реальных изображений other: 0, рекомендуется не менее 50"
+    },
+    {
+      "level": "WARNING",
+      "code": "volume",
+      "where": "<root>",
+      "message": "уникальных полностью читаемых ГРЗ type1a на реальных фото: 0, рекомендуется не менее 50"
+    },
+    {
+      "level": "WARNING",
+      "code": "volume",
+      "where": "<root>",
+      "message": "уникальных полностью читаемых ГРЗ type1b на реальных фото: 0, рекомендуется не менее 100"
+    }
+  ]
+}

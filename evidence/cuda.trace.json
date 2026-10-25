@@ -1,0 +1,393 @@
+{
+  "records": [
+    {
+      "image": "type1.png",
+      "predictions": [
+        {
+          "image": "type1.png",
+          "plate_num": "O944AA598",
+          "plate_type": "type1",
+          "confidence": 0.9997262159983317,
+          "detection_index": 0
+        }
+      ],
+      "detections": [
+        {
+          "image": "type1.png",
+          "detection_index": 0,
+          "bbox": [
+            387.80572509765625,
+            398.54742431640625,
+            575.0433959960938,
+            456.91998291015625
+          ],
+          "observed_quad": [
+            [
+              387.80572509765625,
+              417.61572265625
+            ],
+            [
+              570.9512329101562,
+              398.54742431640625
+            ],
+            [
+              575.0433959960938,
+              437.8516845703125
+            ],
+            [
+              391.89788818359375,
+              456.91998291015625
+            ]
+          ],
+          "detector_class": "type1",
+          "detector_confidence": 0.8559501767158508,
+          "plate_type": "type1",
+          "status": "ocr",
+          "raw_ocr": "O944AA598",
+          "postprocessed_ocr": "O944AA598",
+          "final_ocr": "O944AA598",
+          "ocr_confidence": 0.9997262159983317,
+          "char_probs": [
+            0.9999978542327881,
+            0.9999881982803345,
+            0.9999966621398926,
+            0.9999948740005493,
+            0.9999854564666748,
+            0.9996134638786316,
+            0.9998328685760498,
+            0.9981651902198792,
+            0.9999613761901855
+          ],
+          "sequence_log_probability": -0.0020506440196186304,
+          "preprocessing": {
+            "requested_mode": "split_and_stitch",
+            "effective_mode": "whole_plate",
+            "split": null,
+            "row_boxes": [],
+            "input_shapes": [
+              [
+                160,
+                742
+              ]
+            ],
+            "stitch_transforms": [],
+            "method": "A_current_F",
+            "structural_confidence": 0
+          },
+          "normalized_sha256": "e8771680882fddbf7393b5aa9668afbb67ca3ef57b20f8483ac688340db3b914",
+          "expansion_status": "unchanged",
+          "candidates": [
+            {
+              "method": "A_current_F",
+              "raw": "O944AA598",
+              "CTC_log_probability": -0.0020506440196186304,
+              "selection_score": 0.7497721506644868,
+              "structural_confidence": 0,
+              "mask_valid": true
+            }
+          ],
+          "selected_candidate": 0,
+          "candidate_count": 1,
+          "stage_ms": {
+            "split_stitch": 76.12350000999868,
+            "OCR_and_candidate_scoring": 9291.482200031169
+          },
+          "detection_total_ms": 11318.91849997919
+        }
+      ],
+      "cached_detections": false,
+      "detector_ms": 11588.743500004057,
+      "total_ms": 22907.673300011083,
+      "submission_pipeline_ms": 22907.681700016838,
+      "input_sha256": "e66cee3d2cbba922ce3501b0f5e6b6681c517ab4f471cbc2c8fdbbdfd3e3f33b",
+      "read_decode_ms": 4.240899987053126
+    },
+    {
+      "image": "type1a.png",
+      "predictions": [
+        {
+          "image": "type1a.png",
+          "plate_num": "K327YY55",
+          "plate_type": "type1a",
+          "confidence": 0.9996476694941521,
+          "detection_index": 0
+        }
+      ],
+      "detections": [
+        {
+          "image": "type1a.png",
+          "detection_index": 0,
+          "bbox": [
+            362.9075012207031,
+            375.671630859375,
+            595.8828735351562,
+            553.78466796875
+          ],
+          "observed_quad": [
+            [
+              395.8760681152344,
+              375.671630859375
+            ],
+            [
+              595.8828735351562,
+              428.16143798828125
+            ],
+            [
+              562.9143676757812,
+              553.78466796875
+            ],
+            [
+              362.9075012207031,
+              501.29486083984375
+            ]
+          ],
+          "detector_class": "type1a",
+          "detector_confidence": 0.9726899862289429,
+          "plate_type": "type1a",
+          "status": "ocr",
+          "raw_ocr": "K327YY55",
+          "postprocessed_ocr": "K327YY55",
+          "final_ocr": "K327YY55",
+          "ocr_confidence": 0.9996476694941521,
+          "char_probs": [
+            0.9999786615371704,
+            0.9993940591812134,
+            0.9999985694885254,
+            0.9999818801879883,
+            0.9999973773956299,
+            0.9999970197677612,
+            0.9979155659675598,
+            0.9999182224273682
+          ],
+          "sequence_log_probability": -0.022815342992544174,
+          "preprocessing": {
+            "requested_mode": "split_and_stitch",
+            "effective_mode": "split_and_stitch",
+            "split": {
+              "requested_method": "horizontal_projection",
+              "used_method": "horizontal_projection",
+              "cut_y": 138,
+              "reliable": true,
+              "confidence": 1.0,
+              "fallback": []
+            },
+            "row_boxes": [
+              [
+                0,
+                7,
+                480,
+                138
+              ],
+              [
+                0,
+                138,
+                480,
+                261
+              ]
+            ],
+            "input_shapes": [
+              [
+                72,
+                503
+              ]
+            ],
+            "stitch_transforms": [
+              [
+                [
+                  0.4895833333333333,
+                  0.0,
+                  4.0
+                ],
+                [
+                  0.0,
+                  0.48854961832061067,
+                  4.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              [
+                [
+                  0.5208333333333334,
+                  0.0,
+                  249.0
+                ],
+                [
+                  0.0,
+                  0.5203252032520326,
+                  4.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ]
+            ],
+            "method": "A_current_F",
+            "structural_confidence": 1
+          },
+          "normalized_sha256": "d04a344b26343ed28a9a6ab290e3e7bb3e5f49ad9c10d6e5bfc84b3f8151c702",
+          "expansion_status": "unchanged",
+          "candidates": [
+            {
+              "method": "A_current_F",
+              "raw": "K327YY55",
+              "CTC_log_probability": -0.022815342992544174,
+              "selection_score": 0.797148082125932,
+              "structural_confidence": 1,
+              "mask_valid": true
+            },
+            {
+              "method": "B_projection",
+              "raw": "K327YY55",
+              "CTC_log_probability": -0.019546035677194595,
+              "selection_score": 0.7897637013560864,
+              "structural_confidence": 0.8441391163147152,
+              "mask_valid": true
+            },
+            {
+              "method": "D_components",
+              "raw": "K327YY55",
+              "CTC_log_probability": -0.044085271656513214,
+              "selection_score": 0.7870521687447926,
+              "structural_confidence": 0.8512565540371351,
+              "mask_valid": true
+            }
+          ],
+          "selected_candidate": 0,
+          "candidate_count": 3,
+          "stage_ms": {
+            "split_stitch": 1824.8618000070564,
+            "OCR_and_candidate_scoring": 88.70889997342601
+          },
+          "detection_total_ms": 1915.7184999785386
+        }
+      ],
+      "cached_detections": false,
+      "detector_ms": 97.57139999419451,
+      "total_ms": 2013.2983999792486,
+      "submission_pipeline_ms": 2013.324500003364,
+      "input_sha256": "57c71add548a0267a8c14ee96b6dceb3439658c2a87d7af0f984276d437d3106",
+      "read_decode_ms": 4.77380002848804
+    },
+    {
+      "image": "type1b.png",
+      "predictions": [
+        {
+          "image": "type1b.png",
+          "plate_num": "AA795755",
+          "plate_type": "type1b",
+          "confidence": 0.9998995438218117,
+          "detection_index": 0
+        }
+      ],
+      "detections": [
+        {
+          "image": "type1b.png",
+          "detection_index": 0,
+          "bbox": [
+            388.9224548339844,
+            408.9905700683594,
+            573.089111328125,
+            486.4710998535156
+          ],
+          "observed_quad": [
+            [
+              388.9224548339844,
+              448.7232971191406
+            ],
+            [
+              564.54931640625,
+              408.9905700683594
+            ],
+            [
+              573.089111328125,
+              446.7383728027344
+            ],
+            [
+              397.4622497558594,
+              486.4710998535156
+            ]
+          ],
+          "detector_class": "type1b",
+          "detector_confidence": 0.9609314799308777,
+          "plate_type": "type1b",
+          "status": "ocr",
+          "raw_ocr": "AA795755",
+          "postprocessed_ocr": "A479#T55",
+          "final_ocr": "AA795755",
+          "ocr_confidence": 0.9998995438218117,
+          "char_probs": [
+            0.9999492168426514,
+            0.9999041557312012,
+            0.9998654127120972,
+            0.9997798800468445,
+            0.9999433755874634,
+            0.9998525381088257,
+            0.9999573230743408,
+            0.9999444484710693
+          ],
+          "sequence_log_probability": -0.0008903419366106391,
+          "preprocessing": {
+            "requested_mode": "split_and_stitch",
+            "effective_mode": "whole_plate",
+            "split": null,
+            "row_boxes": [],
+            "input_shapes": [
+              [
+                160,
+                742
+              ]
+            ],
+            "stitch_transforms": [],
+            "method": "A_current_F",
+            "structural_confidence": 0
+          },
+          "normalized_sha256": "cb03c61d26d96c79936386ac4c299bbe3555c6e12e2cf3bb2c8e89acbc7d5afa",
+          "expansion_status": "unchanged",
+          "candidates": [
+            {
+              "method": "A_current_F",
+              "raw": "AA795755",
+              "CTC_log_probability": -0.0008903419366106391,
+              "selection_score": -0.00011129274207632989,
+              "structural_confidence": 0,
+              "mask_valid": false
+            }
+          ],
+          "selected_candidate": 0,
+          "candidate_count": 1,
+          "stage_ms": {
+            "split_stitch": 0.34799997229129076,
+            "OCR_and_candidate_scoring": 8.540800015907735
+          },
+          "detection_total_ms": 10.517699993215501,
+          "frozen_final_ocr": "A479#T55",
+          "typed_postprocessed_ocr": "AA795755",
+          "recognition_profile": "russian_v1",
+          "typed_postprocess_reason": "typed_confidence_mask"
+        }
+      ],
+      "cached_detections": false,
+      "detector_ms": 63.41170001542196,
+      "total_ms": 73.9373000105843,
+      "recognition_profile": "russian_v1",
+      "type1b_postprocess_diagnostics": [
+        {
+          "detection_index": 0,
+          "reason": "typed_confidence_mask",
+          "emitted": true
+        }
+      ],
+      "submission_pipeline_ms": 73.98689998080954,
+      "input_sha256": "eb3ce11638bb3fdce5738e918091a1cc4371c9825873c705b5fca9bdc98bc3f2",
+      "read_decode_ms": 4.325199988670647
+    }
+  ],
+  "ground_truth_input": false,
+  "generation": "436b481121174c9cbb9e98de5992b732"
+}

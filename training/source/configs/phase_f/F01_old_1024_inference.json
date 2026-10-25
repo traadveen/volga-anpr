@@ -1,0 +1,12 @@
+{
+  "name": "F01_old_1024",
+  "weights": "D:\\volga\\volga-anpr\\models\\yolo11_plate.pt",
+  "weights_sha256": "28442713ee4e043c0c23f2a80b5c07c99b0ca56908472dd57fa645786d02b896",
+  "imgsz": 1024,
+  "geometry": "bbox",
+  "routing": "geometry",
+  "fixed_OCR_sha256": "876d8510d507d983d7d911b4e5b135113e98145fe7d4184d74ae9a09262191a9",
+  "dataset_sha256": "aa4f14eaf44bfdc0007abc2a3f199e8b291bed8b26148626cc99836298e1311a",
+  "confidence": 0.5,
+  "iou": 0.5
+}

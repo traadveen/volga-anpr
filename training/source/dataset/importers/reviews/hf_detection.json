@@ -1,0 +1,16 @@
+{
+  "source_id": "AY000554/Car_plate_detecting_dataset",
+  "source": "https://huggingface.co/datasets/AY000554/Car_plate_detecting_dataset",
+  "revision": "f1a57c262cad86e3541bc0a3d951fc021527743c",
+  "license": "CC-BY-4.0",
+  "approved": false,
+  "redistribution_allowed": true,
+  "attribution": "AUTO.RIA Numberplate Options Dataset; ARS Online OU, 2018-2024; HF adaptation AY000554",
+  "review_date": "2026-10-01",
+  "evidence_file": "../evidence/hf_detection_license.txt",
+  "evidence_sha256": "5b3ec6b19b34b3da0e40dbeba8b742abf4c97a2d5c65caf1e082da19289f367f",
+  "evidence_url": "https://huggingface.co/datasets/AY000554/Car_plate_detecting_dataset/resolve/f1a57c262cad86e3541bc0a3d951fc021527743c/license.txt",
+  "conflict_detected": true,
+  "conflict_resolution": "",
+  "notes": "Metadata says Apache-2.0; README/license.txt say CC BY 4.0. Pending recorded resolution; importer blocked by default."
+}

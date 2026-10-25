@@ -1,0 +1,1 @@
+Permission evidence is pending. Add the author permission and bind its SHA-256 in status.json. Do not mark document_verified without inspecting the actual terms. No external publication has been performed.

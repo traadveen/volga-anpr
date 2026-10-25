@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "verified_at": "2026-10-24T23:19:02.323254+00:00",
+  "clean_cpu_install": true,
+  "cpu": {
+    "status": "PASS",
+    "fresh_cpu_environment": "D:\\volga\\runtime\\submission_cpu_20261024\\Scripts\\python.exe",
+    "unit_tests": 13,
+    "processed_images": 3,
+    "prediction_rows": 3,
+    "empty_input": true,
+    "mixed_corrupt_unicode_input": true,
+    "all_bad_preserves_previous": true,
+    "training_integrity": true,
+    "network_required": false
+  },
+  "cuda": {
+    "device": "NVIDIA GeForce GTX 1060 6GB",
+    "processed_images": 3,
+    "prediction_rows": 3,
+    "versions": {
+      "torch": "2.6.0+cu124",
+      "torchvision": "0.21.0+cu124",
+      "ultralytics": "8.4.169",
+      "numpy": "2.2.3",
+      "opencv-python": "5.0.0.93"
+    }
+  },
+  "cpu_cuda_text_and_type_parity": true,
+  "model_sha256": {
+    "detector": "e5583b60e254a47191a65a5e3e78492f99067a4e06b0578549b33d06396776ff",
+    "ocr": "0f63155156ad8bac62dec469d872fd7da701ce879b5ba76e0bc348b1ddb10805"
+  },
+  "validator_errors": 0,
+  "validator_warnings": 113,
+  "dataset_images": 5109,
+  "dataset_objects": 5815,
+  "note_pdf_pages": 4,
+  "note_docx_rendered_pages": 4,
+  "local_document_links_checked": 6,
+  "source_model_files_unchanged": true,
+  "permission_document_verified": false,
+  "reference_hardware_requirement_verified": false,
+  "independent_quality_claim": false
+}

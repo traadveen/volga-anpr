@@ -1,0 +1,735 @@
+{
+  "stats": {
+    "validator_version": "1.0",
+    "dataset_root": "D:\\volga\\submission\\volga-anpr_20261024\\dataset",
+    "images_total": 5109,
+    "images_real": 109,
+    "images_synthetic": 5000,
+    "images_without_meta": 0,
+    "meta_rows": 5815,
+    "plates_by_type": {
+      "type1b": 2340,
+      "type1a": 2329,
+      "type1": 1146
+    },
+    "real_images_by_type": {
+      "type1b": 59,
+      "type1a": 50,
+      "other": 0
+    },
+    "real_unique_plates_by_type": {
+      "type1b": 54,
+      "type1a": 50
+    },
+    "conditions": {
+      "angle": 5343
+    },
+    "sources_top": {
+      "own_generator:scene_current_v1": 5706,
+      "https://universe.roboflow.com/artems-workspace-qhtuc/russ...": 38,
+      "https://universe.roboflow.com/sergai/1-djo2q/dataset/1": 22,
+      "https://www.kaggle.com/datasets/dimahkiin/russian-license...": 14,
+      "https://universe.roboflow.com/fverwfgerwf/two-line-russia...": 3,
+      "https://commons.wikimedia.org/wiki/File:Moscow_bus_10247_...": 2,
+      "https://commons.wikimedia.org/wiki/File:Moscow_bus_16377_...": 2,
+      "https://commons.wikimedia.org/wiki/File:Moscow_bus_10263_...": 2,
+      "https://commons.wikimedia.org/wiki/File:Moscow_bus_06543_...": 2,
+      "https://commons.wikimedia.org/wiki/File:Moscow_bus_17463_...": 2,
+      "https://commons.wikimedia.org/wiki/File:Moscow_bus_11382_...": 1,
+      "https://commons.wikimedia.org/wiki/File:Moscow_bus_13111_...": 1,
+      "https://commons.wikimedia.org/wiki/File:Moscow_bus_09215_...": 1,
+      "https://commons.wikimedia.org/wiki/File:Moscow_bus_09479_...": 1,
+      "https://commons.wikimedia.org/wiki/File:Moscow_bus_09318_...": 1
+    },
+    "licenses": {
+      "CC-BY-4.0": 5762,
+      "Public Domain": 38,
+      "UNVERIFIED: Kaggle image license unknown": 14,
+      "CC0-1.0": 1
+    },
+    "duplicate_images": 0,
+    "debug_set_hits": 0,
+    "errors": 0,
+    "warnings": 113
+  },
+  "issues": [
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5708",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5709",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5710",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5711",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5712",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5713",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5714",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5715",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5716",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5717",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5718",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5719",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5720",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5721",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5722",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5723",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5724",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5725",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5726",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5727",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5728",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5729",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5730",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5731",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5732",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5733",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5734",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5735",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5736",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5737",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5738",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5739",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5740",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5741",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5742",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5743",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5744",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5745",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5746",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5747",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5748",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5749",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5750",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5751",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5752",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5753",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5754",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5755",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5756",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5757",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5758",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5759",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5760",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5761",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5762",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5763",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5764",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5765",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5766",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5767",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5768",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5769",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5770",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5771",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5772",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5773",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5774",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5775",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5776",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5777",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5778",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5779",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5780",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5781",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5782",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5783",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5784",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5785",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5786",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5787",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5788",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5789",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5790",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5791",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5792",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5793",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5794",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5795",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5796",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5797",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5798",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5799",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5800",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5801",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5802",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5803",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5804",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5805",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5806",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5807",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5808",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5809",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5810",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5811",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5812",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5813",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5814",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5815",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "meta-conditions",
+      "where": "meta.csv:5816",
+      "message": "conditions пусто для реального изображения"
+    },
+    {
+      "level": "WARNING",
+      "code": "volume",
+      "where": "<root>",
+      "message": "реальных изображений type1a: 50, рекомендуется не менее 150"
+    },
+    {
+      "level": "WARNING",
+      "code": "volume",
+      "where": "<root>",
+      "message": "реальных изображений type1b: 59, рекомендуется не менее 300"
+    },
+    {
+      "level": "WARNING",
+      "code": "volume",
+      "where": "<root>",
+      "message": "реальных изображений other: 0, рекомендуется не менее 50"
+    },
+    {
+      "level": "WARNING",
+      "code": "volume",
+      "where": "<root>",
+      "message": "уникальных полностью читаемых ГРЗ type1b на реальных фото: 54, рекомендуется не менее 100"
+    }
+  ]
+}

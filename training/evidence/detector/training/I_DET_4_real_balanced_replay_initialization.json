@@ -1,0 +1,7 @@
+[
+  {
+    "parameter_tensors_checked": 280,
+    "all_bit_exact_before_first_batch": true,
+    "first_conv_sha256": "d9c27e8fc5ff235e9728e0c3f70e62c4d2c8676bbfaded1dec37e30d4fe175e3"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T17:40:27.398323+00:00",
+  "git_checkout_integrity": true,
+  "git_checkout_runtime": true,
+  "processed_examples": 3,
+  "expected_text_type_match": true,
+  "lfs_pointers_verified": 6,
+  "max_normal_git_blob_bytes": 39132077,
+  "newline_conversion_disabled": true,
+  "required_data_files_ignored": false,
+  "repository_manifest_verified": true
+}
